@@ -1,0 +1,12 @@
+{% assign id = include.id | times: 1 %}
+{% assign image = page.images[id] %}
+
+<div class="link-with-icon" id="{% include atoms/classname.html title=include.title %}">
+  <span class="icon">
+    {% include atoms/svg.html svg=image.svg png=image.desktop title=include.title %}
+  </span>
+  
+  <span class="link">
+    {% include atoms/link.html url=include.url title=include.title text=include.text %}
+  </span>
+</div>

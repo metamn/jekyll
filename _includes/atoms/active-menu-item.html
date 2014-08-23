@@ -1,0 +1,3 @@
+{% assign url = page.url | replace: 'index.html', '' %}
+
+{% if url == include.url %}active{% endif %}

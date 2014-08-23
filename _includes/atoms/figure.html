@@ -1,0 +1,68 @@
+<!-- http://picture.responsiveimages.org/ -->
+
+<!-- From post, or from direct input -->
+{% if include.id %}
+  {% assign id = include.id | times: 1 %}
+  {% assign image = page.images[id] %}
+  
+  {% assign title = image.title %}
+  {% assign figcaption = image.figcaption %}
+  {% assign class = image.classes | join: ' ' %}
+  {% assign desktop = image.desktop %}
+  {% assign desktop2x = image.desktop2x %}
+  {% assign tablet = image.tablet %}
+  {% assign mobile = image.mobile %}
+  {% assign large = image.large %}
+  {% assign svg = image.svg %}
+{% else %}
+  {% assign title = include.title %}
+  {% assign figcaption = include.figcaption %}
+  {% assign class = include.classes | join: ' ' %}
+  {% assign desktop = include.desktop %}
+  {% assign desktop2x = image.desktop2x %}
+  {% assign tablet = include.tablet %}
+  {% assign mobile = include.mobile %}
+  {% assign large = include.large %}
+  {% assign svg = image.svg %}
+{% endif %}
+
+
+<!-- The deafult image is the desktop -->
+{% if mobile == null %}
+  {% assign mobile = desktop %}
+{% endif %}
+{% if tablet == null %}
+  {% assign tablet = desktop %}
+{% endif %}
+{% if figcaption == null %}
+  {% assign figcaption = title %}
+{% endif %}
+
+
+
+
+<figure id="{% include atoms/classname.html title=title %}" class="{{ class }}">
+  <picture>
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+    <source media="(max-width: 30em" srcset="{{ site.url }}/{{ site.images }}/{{ mobile }}, {{ site.url }}/{{ site.images }}/{{ mobile }} 2x">
+    <source media="(max-width: 48em" srcset="{{ site.url }}/{{ site.images }}/{{ tablet }}">
+    {% if large %}
+      <source media="(min-width: 90em" srcset="{{ site.url }}/{{ site.images }}/{{ large }}">
+    {% endif %}
+    <!--[if IE 9]></video><![endif]-->
+    
+    {% if svg %}
+      {% include atoms/svg.html svg=svg png=desktop title=title %}
+    {% else %}
+      
+      {% if desktop2x %}
+        <img src="{{ site.url }}/{{ site.images }}/{{ desktop }}" srcset="{{ site.url }}/{{ site.images }}/{{ desktop2x }} 2x" alt="{{ title }}">
+      {% else %}
+        <img src="{{ site.url }}/{{ site.images }}/{{ desktop }}" alt="{{ title }}">
+      {% endif %}
+    
+    {% endif %}
+  </picture>
+  
+  <figcaption>{{ figcaption }}</figcaption>
+</figure>
