@@ -3,3 +3,9 @@ permalink: /:title
 title: Site title
 images: assets/images
 #url: http://metamn.github.io/url
+
+
+collections:
+  styleguide:
+    output: true
+  

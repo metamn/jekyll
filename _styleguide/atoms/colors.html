@@ -1,0 +1,22 @@
+---
+layout: default
+title: Colors
+categories:
+  - styleguide
+  - atoms
+  - colors
+items:
+  - name: white
+    value: white
+  - name: black
+    value: black
+---
+
+<h1>Colors</h1>
+
+{% for color in page.items %}
+  {{ color.name }} - {{ color.value }}
+{% endfor %}
+
+
+{% include atoms/button.html text="Button from _icnludes" %}

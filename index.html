@@ -3,17 +3,9 @@ layout: default
 title: Frontpage
 ---
 
-Ahoy!
 
-<br/><br/>
-<h2>All</h2>
-{{ site.data.styleguide }}
+{% for post in site.styleguide %}
+  {{ post.title }}
+  {{ post.categories }}
+{% endfor %}
 
-<br/><br/>
-<h3>Atoms</h3>
-{{ site.data.styleguide.atoms }}
-
-
-<br/><br/>
-<h3>Molecules</h3>
-{{ site.data.styleguide[1] }}
