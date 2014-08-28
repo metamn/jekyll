@@ -1,0 +1,13 @@
+---
+layout: default
+title: Styleguide
+---
+
+<h1>Styleguide</h1>
+
+
+{% assign atoms = site.data.styleguide.atoms['colors'] %}
+
+{% for atom in atoms %}
+  {{ file }}
+{% endfor %}
