@@ -27,31 +27,3 @@ line_comments = false
 # and then run:
 # sass-convert -R --from scss --to sass assets scss && rm -rf sass && mv scss sass
 
-
-
-watch "#{sass_dir}/**/*.liquid" do |project_dir, relative_path|
-  if File.exists?(File.join(project_dir, relative_path))
-    # project_dir: /home/cs/work/jekyll
-    # relative_path: _site/assets/styles/atoms/test.liquid
-    
-    if File.extname(relative_path) == ".liquid"
-      # replace .liquid with .scss
-      #=> _site/assets/styles/atoms/test.scss
-      scss = relative_path.sub ".liquid", ".scss"
-      
-      # replace .liquid with .to-liquid
-      #=> _site/assets/styles/atoms/test.to-liquid
-      liquid = relative_path.sub ".liquid", ".to-liquid"
-      
-      # replace _site with project dir
-      #=> /home/cs/work/jekyll/assets/styles/atoms/test.scss
-      filename = scss.sub "_site", project_dir
-
-      
-      # copy the liquid-to-scss compile file into assets
-      FileUtils.cp(relative_path, filename)
-      # rename the .liquid file to .to-liquid in order to avoid endless re-generations
-      FileUtils.mv(relative_path, liquid)
-    end
-  end
-end
