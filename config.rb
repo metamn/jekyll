@@ -39,17 +39,18 @@ watch "#{sass_dir}/**/*.liquid" do |project_dir, relative_path|
       #=> _site/assets/styles/atoms/test.scss
       scss = relative_path.sub ".liquid", ".scss"
       
-      # remove .liquid
-      liquid = relative_path.sub ".liquid", ""
+      # replace .liquid with .to-liquid
+      #=> _site/assets/styles/atoms/test.to-liquid
+      liquid = relative_path.sub ".liquid", ".to-liquid"
       
       # replace _site with project dir
       #=> /home/cs/work/jekyll/assets/styles/atoms/test.scss
       filename = scss.sub "_site", project_dir
 
       
-      # write new file to destination
+      # copy the liquid-to-scss compile file into assets
       FileUtils.cp(relative_path, filename)
-      # rename the .liquid file in order to avoid endless re-generations
+      # rename the .liquid file to .to-liquid in order to avoid endless re-generations
       FileUtils.mv(relative_path, liquid)
     end
   end
