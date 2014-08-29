@@ -26,3 +26,15 @@ line_comments = false
 # preferred_syntax = :sass
 # and then run:
 # sass-convert -R --from scss --to sass assets scss && rm -rf sass && mv scss sass
+
+
+
+watch "#{sass_dir}/**/*.liquid" do |project_dir, relative_path|
+  if File.exists?(File.join(project_dir, relative_path))
+    # replace .liquid with .scss
+    filename = relative_path.sub ".liquid", ".scss"
+    # replace _site with project dir
+    filename = filename.sub "_site", project_dir
+    FileUtils.cp(relative_path, filename)
+  end
+end
