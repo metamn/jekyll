@@ -1,13 +1,13 @@
 /*
 Syntax error: Undefined mixin 'grid'.
-        on line 3 of /home/cs/work/cs2/assets/styles/pages/default.scss, in `grid'
-        from line 3 of /home/cs/work/cs2/assets/styles/pages/default.scss
+        on line 3 of /home/cs/work/jekyll/assets/styles/pages/default.scss, in `grid'
+        from line 3 of /home/cs/work/jekyll/assets/styles/pages/default.scss
 
-1: /home/cs/work/cs2/assets/styles/pages/default.scss
+1: /home/cs/work/jekyll/assets/styles/pages/default.scss
 
 Backtrace:
-/home/cs/work/cs2/assets/styles/pages/default.scss:3:in `grid'
-/home/cs/work/cs2/assets/styles/pages/default.scss:3
+/home/cs/work/jekyll/assets/styles/pages/default.scss:3:in `grid'
+/home/cs/work/jekyll/assets/styles/pages/default.scss:3
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -92,4 +92,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'grid'.\A         on line 3 of /home/cs/work/cs2/assets/styles/pages/default.scss, in `grid'\A         from line 3 of /home/cs/work/cs2/assets/styles/pages/default.scss\A \A 1: /home/cs/work/cs2/assets/styles/pages/default.scss"; }
+  content: "Syntax error: Undefined mixin 'grid'.\A         on line 3 of /home/cs/work/jekyll/assets/styles/pages/default.scss, in `grid'\A         from line 3 of /home/cs/work/jekyll/assets/styles/pages/default.scss\A \A 1: /home/cs/work/jekyll/assets/styles/pages/default.scss"; }
