@@ -1,15 +1,11 @@
 /*
 Syntax error: Invalid CSS after "-": expected number or function, was "--"
         on line 1 of /home/cs/work/jekyll/assets/styles/atoms/test.scss
-        from line 16 of /home/cs/work/jekyll/assets/styles/atoms/*
-        from line 11 of /home/cs/work/jekyll/assets/styles/screen.scss
 
-1: /home/cs/work/jekyll/assets/styles/screen.scss
+1: /home/cs/work/jekyll/assets/styles/atoms/test.scss
 
 Backtrace:
 /home/cs/work/jekyll/assets/styles/atoms/test.scss:1
-/home/cs/work/jekyll/assets/styles/atoms/*:16
-/home/cs/work/jekyll/assets/styles/screen.scss:11
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:1149:in `expected'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:1085:in `expected'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:1067:in `expr!'
@@ -25,27 +21,6 @@ Backtrace:
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:82:in `stylesheet'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:27:in `parse'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/engine.rb:342:in `_to_tree'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/engine.rb:274:in `to_tree'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:225:in `visit_import'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
 /var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:139:in `block (2 levels) in compile'
@@ -74,4 +49,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"-\": expected number or function, was \"--\"\A         on line 1 of /home/cs/work/jekyll/assets/styles/atoms/test.scss\A         from line 16 of /home/cs/work/jekyll/assets/styles/atoms/*\A         from line 11 of /home/cs/work/jekyll/assets/styles/screen.scss\A \A 1: /home/cs/work/jekyll/assets/styles/screen.scss"; }
+  content: "Syntax error: Invalid CSS after \"-\": expected number or function, was \"--\"\A         on line 1 of /home/cs/work/jekyll/assets/styles/atoms/test.scss\A \A 1: /home/cs/work/jekyll/assets/styles/atoms/test.scss"; }

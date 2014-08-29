@@ -31,10 +31,26 @@ line_comments = false
 
 watch "#{sass_dir}/**/*.liquid" do |project_dir, relative_path|
   if File.exists?(File.join(project_dir, relative_path))
-    # replace .liquid with .scss
-    filename = relative_path.sub ".liquid", ".scss"
-    # replace _site with project dir
-    filename = filename.sub "_site", project_dir
-    FileUtils.cp(relative_path, filename)
+    # project_dir: /home/cs/work/jekyll
+    # relative_path: _site/assets/styles/atoms/test.liquid
+    
+    if File.extname(relative_path) == ".liquid"
+      # replace .liquid with .scss
+      #=> _site/assets/styles/atoms/test.scss
+      scss = relative_path.sub ".liquid", ".scss"
+      
+      # remove .liquid
+      liquid = relative_path.sub ".liquid", ""
+      
+      # replace _site with project dir
+      #=> /home/cs/work/jekyll/assets/styles/atoms/test.scss
+      filename = scss.sub "_site", project_dir
+
+      
+      # write new file to destination
+      FileUtils.cp(relative_path, filename)
+      # rename the .liquid file in order to avoid endless re-generations
+      FileUtils.mv(relative_path, liquid)
+    end
   end
 end

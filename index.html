@@ -4,11 +4,6 @@ title: Frontpage
 ---
 
 
-{% for post in site.styleguide %}
-  {{ post.title }}
-  {{ post.categories }}
-{% endfor %}
-
 {% for page in site.styleguide %}
 {% if page.title == "Colors" %}
 
