@@ -1,13 +1,17 @@
 module Jekyll
   class ScssTag < Liquid::Tag
 
-    def initialize(tag_name, file, tokens)
+    def initialize(tag_name, notused, tokens)
       super
-      @file = file
     end
 
     def render(context)
-      File.readlines "/home/cs/work/jekyll/assets/styles/atoms/color-constants.scss"
+      filename = context.environments.first["page"]["scss"]
+      folder = context.environments.first["page"]["category"]
+      root = Dir.pwd
+      file = root + "/assets/styles/" + folder + "/" + filename
+      
+      File.open(file, 'r') { |f| f.read }
     end
   end
 end
