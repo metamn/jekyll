@@ -31,10 +31,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* No files to import found in molecules/* */
 /* No files to import found in organisms/* */
 /* No files to import found in structures/* */
-html body { font-size: 125%; line-height: 1.25; font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; color: black; background-color: white; }
+html body { font-size: 125%; line-height: 1.25; font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; color: blue; background-color: white; }
 @media only screen and (max-width: 63.999em) { html body { font-size: 100%; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 150%; } }
-html body a { color: black; background-color: white; }
+html body a { color: blue; background-color: white; }
 html body .portrait { display: none; }
 @media only screen and (max-width: 63.999em) { html body .landscape { display: none; }
   html body .portrait { display: block; } }
