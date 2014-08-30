@@ -7,6 +7,9 @@ scripts: assets/scripts
 #url: http://metamn.github.io/url
 
 
+highlighter: rouge
+
+
 collections:
   styleguide:
     output: true

@@ -111,7 +111,41 @@
 </header>
 
 <main>
-  <h1>Color Schemes</h1>
+  <section id="color-schemes" class="styleguide-entry">
+  <h3>Color Schemes</h3>
+  
+  <article class="description">
+    <h3>Description</h3>
+    
+    
+  </article>
+  
+  <article class="scss">
+    <h3>SCSS</h3>
+    
+    <div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@mixin</span> <span class="nf">circle</span><span class="p">(</span><span class="nv">$radius</span><span class="o">:</span> <span class="nv">$gutter</span> <span class="o">*</span> <span class="m">2</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+  <span class="k">@include</span> <span class="nd">border-radius</span><span class="p">(</span><span class="nv">$radius</span><span class="p">);</span>
+<span class="p">}</span>
+
+
+<span class="cm">/* The text must be inside a &lt;span&gt; */</span>
+<span class="k">@mixin</span> <span class="nf">circle-with-text</span><span class="p">(</span><span class="nv">$radius</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">circle</span><span class="p">(</span><span class="nv">$radius</span><span class="p">);</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span><span class="p">;</span>
+  
+  <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="nb">smaller</span><span class="p">;</span>
+
+  <span class="nt">span</span> <span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="nv">$radius</span> <span class="o">/</span> <span class="m">4</span><span class="p">;</span> <span class="c1">//3
+</span>  <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+  </article>
+</section>
 
 
 
