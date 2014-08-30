@@ -8,8 +8,8 @@
 @import "compass/css3";
 @import "harsh";
 
+//@import "../../_site/assets/styles/atoms/color-constants.liquid.scss";
 @import "atoms/*";
-@import "../../_site/assets/styles/atoms/*.liquid.scss";
 @import "molecules/*";
 @import "organisms/*";
 @import "structures/*";

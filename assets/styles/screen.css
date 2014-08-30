@@ -31,15 +31,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* No files to import found in molecules/* */
 /* No files to import found in organisms/* */
 /* No files to import found in structures/* */
-html body { font-size: 125%; line-height: 1.25; font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; color: #071211; background-color: white; }
+html body { font-size: 125%; line-height: 1.25; font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; color: #071211; background-color: whitey; }
 @media only screen and (max-width: 63.999em) { html body { font-size: 100%; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 150%; } }
-html body a { color: #071211; background-color: white; }
+html body a { color: #071211; background-color: whitey; }
 html body .portrait { display: none; }
 @media only screen and (max-width: 63.999em) { html body .landscape { display: none; }
   html body .portrait { display: block; } }
 html body section, html body article, html body nav, html body header, html body footer, html body aside { width: 100%; float: left; }
 html body section > h3, html body article > h3, html body nav > h3, html body header > h3, html body footer > h3, html body aside > h3 { display: none; }
+
+html.styleguide body header { width: 12.91667em; float: left; }
+html.styleguide body main { width: calc(100% - 12.91667em); float: left; }
+html.styleguide body main .styleguide-entry > h3 { display: block; }
+html.styleguide body main .styleguide-entry article > h3 { display: none; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }

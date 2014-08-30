@@ -2,6 +2,8 @@ permalink: /:title
 
 title: Site title
 images: assets/images
+styles: assets/styles
+scripts: assets/scripts
 #url: http://metamn.github.io/url
 
 

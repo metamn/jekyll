@@ -1,0 +1,21 @@
+html.styleguide {
+  body {
+    header {
+      width: col(2);
+      float: left;
+    }
+    
+    main {
+      width: calc(100% - #{col(2)});
+      float: left;
+    
+      .styleguide-entry {
+        @include show-title;
+        
+        article {
+          @include hide-title;
+        }
+      }
+    }
+  }
+}

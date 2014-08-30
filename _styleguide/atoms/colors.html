@@ -2,16 +2,19 @@
 layout: styleguide
 title: Colors
 category: atoms
+scss: "color-constants.scss"
 items:
   - name: white
-    value: white
+    value: whitey
   - name: black
     value: "hsla(170, 45%, 5%, 1)"
 ---
 
-<h1>Colors</h1>
 
-{% for color in page.items %}
-  {{ color.name }} - {{ color.value }}
-{% endfor %}
+{% capture description %}
+  <p>
+    All the colors used by the site.
+  </p>
+{% endcapture %}
 
+{% include styleguide/styleguide-entry.html description=description %}
