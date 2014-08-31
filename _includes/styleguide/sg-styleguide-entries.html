@@ -1,5 +1,5 @@
-{% for entry in site.styleguide reversed %}
+{% for entry in site.pages reversed %}
   {% if entry.category == include.folder %}
-    {{ entry.output }}
+    {{ entry.content }}
   {% endif %}
 {% endfor %}
