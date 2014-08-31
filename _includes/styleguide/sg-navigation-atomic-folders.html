@@ -1,0 +1,9 @@
+<li>{% include styleguide/sg-navigation-link.html title=include.folder %}</li>
+
+<ul>
+  {% for entry in site.styleguide reversed %}
+    {% if entry.category == include.folder %}
+      <li>{% include styleguide/sg-navigation-link.html title=entry.title folder=include.folder %}</li>
+    {% endif %}
+  {% endfor %}
+</ul>

@@ -6,8 +6,10 @@ scss: "color-constants.scss"
 items:
   - name: white
     value: whitey
+    description: Used for the site background
   - name: black
     value: "hsla(170, 45%, 5%, 1)"
+    description: Used for text color
 ---
 
 
@@ -17,4 +19,29 @@ items:
   </p>
 {% endcapture %}
 
-{% include styleguide/styleguide-entry.html description=description %}
+
+{% capture example %}
+  <div class="colors">
+    {% for item in page.items %}
+      <div class="color">
+        <span class="rectangel"></span>
+        <span class="name">{{ item.name }}</span>
+        <span class="value">{{ item.value }}</span>
+        <span class="description">{{ item.description }}</span>
+      </div>
+    {% endfor %}
+  </div>
+{% endcapture %}
+
+
+
+{% capture technical %}
+  <p>
+    This is a short technical description
+  </p>
+{% endcapture %}
+
+
+
+
+{% include styleguide/sg-styleguide-entry.html description=description example=example technical=technical %}

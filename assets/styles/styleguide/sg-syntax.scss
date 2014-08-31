@@ -1,3 +1,13 @@
+@mixin sg-syntax {
+
+// Syntax highlighter stylesheet
+// - generated with rouge
+// - rougify style monokai.sublime > assets/styles/styleguide/syntax.css
+
+
+
+
+
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 .highlight .gh {
@@ -184,4 +194,6 @@
 }
 .highlight .o {
   color: #f92672;
+}
+
 }

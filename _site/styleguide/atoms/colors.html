@@ -8,7 +8,10 @@
     <title>Colors &mdash; Site title</title> 
     
     <!-- Compass with SASS -->
-  	<link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  	
+      <!-- Styleguide -->
+      <link href="/assets/styles/styleguide.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    
     
     <!-- IE 9 -->
     <!--[if lt IE 9]>
@@ -113,6 +116,16 @@
 <main>
   
 
+
+
+
+
+
+
+
+
+
+
 <section id="colors" class="styleguide-entry">
   <h3>Colors</h3>
   
@@ -126,11 +139,56 @@
 
   </article>
   
-  <article class="scss">
-    <h3>SCSS</h3>
+  
+  <article class="example">
+    <h3>Example</h3>
     
-    <div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$white</span><span class="p">:</span> <span class="n">whitey</span><span class="p">;</span>
-<span class="nv">$black</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">170</span><span class="o">,</span> <span class="m">45%</span><span class="o">,</span> <span class="m">5%</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span></code></pre></div>
+    
+  <div class="colors">
+    
+      <div class="color">
+        <span class="rectangel"></span>
+        <span class="name">white</span>
+        <span class="value">whitey</span>
+        <span class="description">Used for the site background</span>
+      </div>
+    
+      <div class="color">
+        <span class="rectangel"></span>
+        <span class="name">black</span>
+        <span class="value">hsla(170, 45%, 5%, 1)</span>
+        <span class="description">Used for text color</span>
+      </div>
+    
+  </div>
+
+  </article>
+  
+  
+  <article class="technical">
+    <h3>Technical description</h3>
+    
+    
+  <p>
+    This is a short technical description
+  </p>
+
+  </article>
+  
+  <article class="code">
+    <h3>Source code</h3>
+    
+    <nav>
+      <h3>Code snippets</h3>
+      
+      <ul>
+        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$white</span><span class="p">:</span> <span class="n">whitey</span><span class="p">;</span>
+<span class="nv">$black</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">170</span><span class="o">,</span> <span class="m">45%</span><span class="o">,</span> <span class="m">5%</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span></code></pre></div></li>
+        <li></li>
+        <li><div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$white</span><span class="err">:</span> <span class="nx">whitey</span><span class="p">;</span>
+<span class="nl">$black</span><span class="p">:</span> <span class="nx">hsla</span><span class="p">(</span><span class="mi">170</span><span class="p">,</span> <span class="mi">45</span><span class="o">%</span><span class="p">,</span> <span class="mi">5</span><span class="o">%</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span></code></pre></div></li>
+      </ul>
+    </nav>
   </article>
 </section>
 

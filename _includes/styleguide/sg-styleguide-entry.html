@@ -1,0 +1,37 @@
+<section id="{% include atoms/classname.html title=page.title %}" class="styleguide-entry">
+  <h3>{{ page.title }}</h3>
+  
+  <article class="description">
+    <h3>Description</h3>
+    
+    {{ include.description }}
+  </article>
+  
+  
+  <article class="example">
+    <h3>Example</h3>
+    
+    {{ include.example }}
+  </article>
+  
+  
+  <article class="technical">
+    <h3>Technical description</h3>
+    
+    {{ include.technical }}
+  </article>
+  
+  <article class="code">
+    <h3>Source code</h3>
+    
+    <nav>
+      <h3>Code snippets</h3>
+      
+      <ul>
+        <li>{% if page.scss %}{% highlight scss %}{% scss %}{% endhighlight %}{% endif %}</li>
+        <li>{% if page.html %}{% highlight html %}{% scss %}{% endhighlight %}{% endif %}</li>
+        <li>{% if page.scss %}{% highlight js %}{% scss %}{% endhighlight %}{% endif %}</li>
+      </ul>
+    </nav>
+  </article>
+</section>

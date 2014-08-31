@@ -1,0 +1,14 @@
+@mixin sg-highlight {
+  @include sg-syntax;
+  
+  .highlight {
+    background: black;
+    color: white;
+
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-size: smaller;
+
+    max-width: $text-width;
+    padding: $gutter;
+  }
+}

@@ -1,0 +1,136 @@
+/* Styleguide specific entries
+*/
+/* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans+Condensed:300,700);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+/* The text must be inside a <span> */
+/* for very combination check the contrast ratio !!! - http://leaverou.github.io/contrast-ratio/
+ - black on white: 18.4 - black on orange: 11 - white on violet: 3.1, only suitable for large fonts - black on green: 15.4
+*/
+/* Center horizontally - works with an inner container only - example: <header> <div class="container"> ... header { @include center }
+*/
+/* Center vertically or horizontally using transformations
+- http://davidwalsh.name/css-vertical-center
+*/
+/* https://developers.google.com/web/fundamentals/look-and-feel/animations/animating-between-views
+*/
+/* No files to import found in molecules/* */
+/* No files to import found in organisms/* */
+/* No files to import found in structures/* */
+html body { font-size: 125%; line-height: 1.25; font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; color: #071211; background-color: whitey; }
+@media only screen and (max-width: 63.999em) { html body { font-size: 100%; } }
+@media only screen and (min-width: 90.001em) { html body { font-size: 150%; } }
+html body a { color: #071211; background-color: whitey; }
+html body .portrait { display: none; }
+@media only screen and (max-width: 63.999em) { html body .landscape { display: none; }
+  html body .portrait { display: block; } }
+html body section, html body article, html body nav, html body header, html body footer, html body aside { width: 100%; float: left; }
+html body section > h3, html body article > h3, html body nav > h3, html body header > h3, html body footer > h3, html body aside > h3 { display: none; }
+
+#gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
+#gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }
+#gravity .h-horizontal { top: calc(50% - 1px); width: 100%; border-bottom: 1px solid red; }
+#gravity .h-golden-rectangle { border: 1px solid green; opacity: .8; }
+#gravity .h-gravity-point { position: absolute; z-index: 1000; opacity: .3; display: none; }
+#gravity .h-gravity-point:after { content: ''; display: block; width: 1.25em; height: 1.25em; background: red; position: relative; top: -0.625em; left: -0.625em; }
+#gravity .h-gravity-point:last-of-type { display: block; }
+
+#grid { position: absolute; top: 0; opacity: .1; z-index: -1; }
+
+#grid .col { border-right: 1px solid; border-bottom: 1px solid; width: calc(5.20833em + 1.25em - 1px); height: calc(5em + 1.25em - 1px); float: left; }
+
+#grid .gutter-right { float: right; border-left: 1px solid; width: calc(1.25em - 1px); height: 100%; }
+
+#grid .gutter-bottom { float: left; border-bottom: 1px solid; height: calc(1.25em - 1px); width: 100%; }
+
+/*
+#grid { z-index: 100;  .col { color: red; }
+}
+*/
+#grid, #gravity { display: none; }
+
+html.styleguide body header { width: 12.91667em; float: left; }
+html.styleguide body main { width: calc(100% - 12.91667em); float: left; }
+html.styleguide body main .styleguide-entry > h3 { display: block; }
+html.styleguide body main .styleguide-entry article { width: 100%; float: left; }
+html.styleguide body main .styleguide-entry article > h3 { display: none; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight table td { padding: 5px; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight table pre { margin: 0; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .gh { color: #999999; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .sr { color: #f6aa11; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .go { color: #888888; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .gp { color: #555555; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .gu { color: #aaaaaa; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .nb { color: #f6aa11; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .cm { color: #75715e; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .cp { color: #75715e; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .c1 { color: #75715e; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .cs { color: #75715e; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .c, html.styleguide body main .styleguide-entry article.code nav ul li .highlight .cd { color: #75715e; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .err { color: #960050; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .gr { color: #960050; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .gt { color: #960050; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .gd { color: #49483e; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .gi { color: #49483e; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .ge { color: #49483e; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .kc { color: #66d9ef; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .kd { color: #66d9ef; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .kr { color: #66d9ef; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .no { color: #66d9ef; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .kt { color: #66d9ef; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .mf { color: #ae81ff; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .mh { color: #ae81ff; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .il { color: #ae81ff; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .mi { color: #ae81ff; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .mo { color: #ae81ff; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .m, html.styleguide body main .styleguide-entry article.code nav ul li .highlight .mb, html.styleguide body main .styleguide-entry article.code nav ul li .highlight .mx { color: #ae81ff; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .sc { color: #ae81ff; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .se { color: #ae81ff; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .ss { color: #ae81ff; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .sd { color: #e6db74; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .s2 { color: #e6db74; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .sb { color: #e6db74; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .sh { color: #e6db74; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .si { color: #e6db74; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .sx { color: #e6db74; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .s1 { color: #e6db74; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .s { color: #e6db74; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .na { color: #a6e22e; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .nc { color: #a6e22e; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .nd { color: #a6e22e; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .ne { color: #a6e22e; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .nf { color: #a6e22e; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .vc { color: #ffffff; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .nn { color: #ffffff; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .nl { color: #ffffff; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .ni { color: #ffffff; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .bp { color: #ffffff; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .vg { color: #ffffff; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .vi { color: #ffffff; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .nv { color: #ffffff; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .w { color: #ffffff; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight { color: #ffffff; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .n, html.styleguide body main .styleguide-entry article.code nav ul li .highlight .py, html.styleguide body main .styleguide-entry article.code nav ul li .highlight .nx { color: #ffffff; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .ow { color: #f92672; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .nt { color: #f92672; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .k, html.styleguide body main .styleguide-entry article.code nav ul li .highlight .kv { color: #f92672; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .kn { color: #f92672; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .kp { color: #f92672; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight .o { color: #f92672; }
+html.styleguide body main .styleguide-entry article.code nav ul li .highlight { background: black; color: white; font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: smaller; max-width: 31.25em; padding: 1.25em; }
