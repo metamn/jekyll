@@ -53,12 +53,6 @@
 </li>
     
   
-    
-      <li>
-  <a href="/styleguide/atoms/color-schemes.html" title="Color Schemes">Color Schemes</a>
-</li>
-    
-  
 </ul>
 
     <li>
@@ -66,8 +60,6 @@
 </li>
 
 <ul>
-  
-    
   
     
   
@@ -81,8 +73,6 @@
   
     
   
-    
-  
 </ul>
 
     <li>
@@ -93,8 +83,6 @@
   
     
   
-    
-  
 </ul>
 
     <li>
@@ -102,8 +90,6 @@
 </li>
 
 <ul>
-  
-    
   
     
   
@@ -184,9 +170,35 @@
       <ul>
         <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$white</span><span class="p">:</span> <span class="n">whitey</span><span class="p">;</span>
 <span class="nv">$black</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">170</span><span class="o">,</span> <span class="m">45%</span><span class="o">,</span> <span class="m">5%</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span></code></pre></div></li>
+        <li><div class="highlight"><pre><code class="language-html" data-lang="html">{% if include.id %}
+  {% assign id = include.id | times: 1 %}
+  {% assign link = page.links[id] %}
+  {% assign url = link.url %}
+  {% assign title = link.title %}
+  
+  {% if link.text %}
+    {% assign text = link.text %}
+  {% else %}
+    {% assign text = link.title %}
+  {% endif %}
+{% else %}
+  {% assign url = include.url %}
+  {% assign title = include.title %}
+
+  {% if include.text %}
+    {% assign text = include.text %}
+  {% else %}
+    {% assign text = include.title %}
+  {% endif %}
+{% endif %}
+
+
+{% if include.relative %}
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ site.url }}{{ url }}"</span> <span class="na">title=</span><span class="s">"{{ title }}"</span><span class="nt">&gt;</span>{{ text }}<span class="nt">&lt;/a&gt;</span>
+{% else %}
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ url }}"</span> <span class="na">title=</span><span class="s">"{{ title }}"</span><span class="nt">&gt;</span>{{ text }}<span class="nt">&lt;/a&gt;</span>
+{% endif %}</code></pre></div></li>
         <li></li>
-        <li><div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$white</span><span class="err">:</span> <span class="nx">whitey</span><span class="p">;</span>
-<span class="nl">$black</span><span class="p">:</span> <span class="nx">hsla</span><span class="p">(</span><span class="mi">170</span><span class="p">,</span> <span class="mi">45</span><span class="o">%</span><span class="p">,</span> <span class="mi">5</span><span class="o">%</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span></code></pre></div></li>
       </ul>
     </nav>
   </article>
