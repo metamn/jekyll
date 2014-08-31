@@ -9,6 +9,18 @@ html.styleguide {
       width: calc(100% - #{col(2)});
       float: left;
     
+      // On archives instead of post.content we have only post.output
+      // - this makes the archive pages act like iframes
+      // - so we have to hide the sidebar/header and make main to be full width
+    
+      header {
+        display: none;
+      }
+    
+      main {
+        @include block;
+      }
+    
       .styleguide-entry {
         @include show-title;
         
@@ -21,8 +33,7 @@ html.styleguide {
               @include sg-highlight;
             }
           }
-        }
-        
+        }  
       }
     }
   }

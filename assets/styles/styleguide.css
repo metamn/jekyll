@@ -67,6 +67,8 @@ html body section > h3, html body article > h3, html body nav > h3, html body he
 
 html.styleguide body header { width: 12.91667em; float: left; }
 html.styleguide body main { width: calc(100% - 12.91667em); float: left; }
+html.styleguide body main header { display: none; }
+html.styleguide body main main { width: 100%; float: left; }
 html.styleguide body main .styleguide-entry > h3 { display: block; }
 html.styleguide body main .styleguide-entry article { width: 100%; float: left; }
 html.styleguide body main .styleguide-entry article > h3 { display: none; }
