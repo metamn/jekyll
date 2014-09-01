@@ -10,11 +10,9 @@ html.styleguide {
       float: left;
     
       .styleguide-entry {
-        @include show-title;
         
         article {
-          @include block;
-          @include hide-title;
+          
           
           &.code {
             nav ul li {

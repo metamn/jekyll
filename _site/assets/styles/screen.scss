@@ -14,16 +14,3 @@
 @import "organisms/*";
 @import "structures/*";
 @import "pages/*";
-
-@import "visual-grid";
-
-/*
-#grid {
-  z-index: 100;
-  
-  .col {
-    color: red;
-  }
-}
-*/
-#grid, #gravity { display: none; }

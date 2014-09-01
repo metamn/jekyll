@@ -20,7 +20,7 @@ module Jekyll
           file = root + "/assets/scripts/" + folder + "/" + filename
       end
       
-      File.open(file, 'r') { |f| f.read }
+      File.open(file, 'r') { |f| f.read } if File.exist? file
     end
   end
 end
