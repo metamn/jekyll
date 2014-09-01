@@ -1,10 +1,19 @@
 ---
 ---
-
 @mixin html5-outliner {
   {% for page in site.pages %}{% if page.title == "HTML5 Outliner" %}{{ page.elements | join: ', '}}{% endif %}{% endfor %} {
-    > h3 {
-      display: none;
-    }
+    @include hide-title;
+  }
+}
+
+@mixin hide-title {
+  > h3 {
+    display: none;
+  }
+}
+
+@mixin show-title {
+  > h3 {
+    display: block;
   }
 }

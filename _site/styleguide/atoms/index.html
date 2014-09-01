@@ -282,7 +282,7 @@
     
       <code>nav</code>
     
-    has a title by default which is hidden on the user interface but visible for outliner bots.
+    has a title by default which is hidden on the user interface but visible for HTML5 outliner bots.
   </p>
 
   </article>
@@ -320,9 +320,19 @@
       <ul>
         <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@mixin</span> <span class="nf">html5-outliner</span> <span class="p">{</span>
   <span class="nt">section</span><span class="o">,</span> <span class="nt">article</span><span class="o">,</span> <span class="nt">aside</span><span class="o">,</span> <span class="nt">nav</span> <span class="p">{</span>
-    <span class="o">&gt;</span> <span class="nt">h3</span> <span class="p">{</span>
-      <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
-    <span class="p">}</span>
+    <span class="k">@include</span> <span class="nd">hide-title</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@mixin</span> <span class="nf">hide-title</span> <span class="p">{</span>
+  <span class="o">&gt;</span> <span class="nt">h3</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@mixin</span> <span class="nf">show-title</span> <span class="p">{</span>
+  <span class="o">&gt;</span> <span class="nt">h3</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">}</span></code></pre></div></li>
         <li></li>

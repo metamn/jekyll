@@ -26,6 +26,7 @@ html body section > h3, html body article > h3, html body aside > h3, html body 
 
 html.styleguide body header { width: col(2); float: left; }
 html.styleguide body main { width: calc(100% - col(2)); float: left; }
+html.styleguide body main .styleguide-entry > h3 { display: block; }
 html.styleguide body main .styleguide-entry article.code nav ul li .highlight table td { padding: 5px; }
 html.styleguide body main .styleguide-entry article.code nav ul li .highlight table pre { margin: 0; }
 html.styleguide body main .styleguide-entry article.code nav ul li .highlight .gh { color: #999999; }

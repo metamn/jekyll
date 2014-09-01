@@ -1,7 +1,17 @@
 @mixin html5-outliner {
   section, article, aside, nav {
-    > h3 {
-      display: none;
-    }
+    @include hide-title;
+  }
+}
+
+@mixin hide-title {
+  > h3 {
+    display: none;
+  }
+}
+
+@mixin show-title {
+  > h3 {
+    display: block;
   }
 }
