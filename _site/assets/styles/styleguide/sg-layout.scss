@@ -1,0 +1,14 @@
+@mixin styleguide-layout {
+  header, main {
+    @include flex-item;
+    padding: 1.25em;
+  }
+  
+  main {
+    @include flex-grow(2);
+  }
+  
+  @include portrait {
+    @include flexbox-wrap(wrap);
+  }
+}

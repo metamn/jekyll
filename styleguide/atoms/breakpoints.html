@@ -1,0 +1,41 @@
+---
+layout: styleguide
+title: Breakpoints
+category: atoms
+scss: "breakpoints.scss"
+items:
+  - name: "$breakpoint-small-screen"
+    description: Screens width less than 1024px width
+    value: "64em"
+---
+
+
+{% capture description %}
+  <p>
+    Breakpoints used for responsive layouts.
+  </p>
+{% endcapture %}
+
+
+{% capture example %}
+  
+{% endcapture %}
+
+
+
+{% capture technical %}
+  <p>
+    Since Compass has no support yet for Flexbox there is a set of mixins created using 
+    <a href="https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss" title="SCSS Flexbox Mixins">SCSS Flexbox Mixins</a>
+  </p>
+  <ul>
+    {% for related in page.related %}
+      <li>{{ related.name }}</li>
+    {% endfor %}
+  </ul>
+{% endcapture %}
+
+
+
+
+{% include styleguide/sg-styleguide-entry.html description=description example=example technical=technical %}

@@ -50,6 +50,14 @@
     
   
     
+      <li>
+  <a href="/styleguide/atoms/responsiveness.html" title="Responsiveness">Responsiveness</a>
+</li>
+    
+  
+    
+  
+    
   
     
   
@@ -89,6 +97,14 @@
 </li>
     
   
+    
+  
+    
+      <li>
+  <a href="/styleguide/atoms/breakpoints.html" title="Breakpoints">Breakpoints</a>
+</li>
+    
+  
 </ul>
 
     <li>
@@ -96,6 +112,14 @@
 </li>
 
 <ul>
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -157,6 +181,14 @@
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
 </ul>
 
     <li>
@@ -164,6 +196,14 @@
 </li>
 
 <ul>
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -225,6 +265,14 @@
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
 </ul>
 
   </ul>
@@ -234,6 +282,41 @@
 <main>
   <h1>Atoms</h1>
 
+
+  
+
+  
+    {% capture description %}
+  <p>
+    Breakpoints used for responsive layouts.
+  </p>
+{% endcapture %}
+
+
+{% capture example %}
+  
+{% endcapture %}
+
+
+
+{% capture technical %}
+  <p>
+    Since Compass has no support yet for Flexbox there is a set of mixins created using 
+    <a href="https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss" title="SCSS Flexbox Mixins">SCSS Flexbox Mixins</a>
+  </p>
+  <ul>
+    {% for related in page.related %}
+      <li>{{ related.name }}</li>
+    {% endfor %}
+  </ul>
+{% endcapture %}
+
+
+
+
+{% include styleguide/sg-styleguide-entry.html description=description example=example technical=technical %}
+
+  
 
   
 
@@ -605,6 +688,75 @@
       <ul>
         <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$white</span><span class="p">:</span> <span class="n">whitey</span><span class="p">;</span>
 <span class="nv">$black</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">170</span><span class="o">,</span> <span class="m">45%</span><span class="o">,</span> <span class="m">5%</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span></code></pre></div></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+  </article>
+</section>
+
+  
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+<section id="breakpoints" class="styleguide-entry">
+  <h3>Breakpoints</h3>
+  
+  <article class="description">
+    <h3>Description</h3>
+    
+    
+  <p>
+    Breakpoints used for responsive layouts.
+  </p>
+
+  </article>
+  
+  
+  <article class="example">
+    <h3>Example</h3>
+    
+    
+  
+
+  </article>
+  
+  
+  <article class="technical">
+    <h3>Technical description</h3>
+    
+    
+  <p>
+    Since Compass has no support yet for Flexbox there is a set of mixins created using 
+    <a href="https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss" title="SCSS Flexbox Mixins">SCSS Flexbox Mixins</a>
+  </p>
+  <ul>
+    
+  </ul>
+
+  </article>
+  
+  <article class="code">
+    <h3>Source code</h3>
+    
+    <nav>
+      <h3>Code snippets</h3>
+      
+      <ul>
+        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$breakpoint-small-screen</span><span class="p">:</span> <span class="m">64em</span><span class="p">;</span></code></pre></div></li>
         <li></li>
         <li></li>
       </ul>

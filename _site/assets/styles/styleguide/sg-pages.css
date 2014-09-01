@@ -1,32 +1,14 @@
 /*
-Syntax error: Undefined mixin 'show-title'.
-        on line 13 of /home/cs/work/jekyll/assets/styles/styleguide/sg-pages.scss, in `show-title'
-        from line 13 of /home/cs/work/jekyll/assets/styles/styleguide/sg-pages.scss
+Syntax error: Undefined mixin 'styleguide-layout'.
+        on line 3 of /home/cs/work/jekyll/assets/styles/styleguide/sg-pages.scss, in `styleguide-layout'
+        from line 3 of /home/cs/work/jekyll/assets/styles/styleguide/sg-pages.scss
+
+1: /home/cs/work/jekyll/assets/styles/styleguide/sg-pages.scss
 
 Backtrace:
-/home/cs/work/jekyll/assets/styles/styleguide/sg-pages.scss:13:in `show-title'
-/home/cs/work/jekyll/assets/styles/styleguide/sg-pages.scss:13
+/home/cs/work/jekyll/assets/styles/styleguide/sg-pages.scss:3:in `styleguide-layout'
+/home/cs/work/jekyll/assets/styles/styleguide/sg-pages.scss:3
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -110,4 +92,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'show-title'.\A         on line 13 of /home/cs/work/jekyll/assets/styles/styleguide/sg-pages.scss, in `show-title'\A         from line 13 of /home/cs/work/jekyll/assets/styles/styleguide/sg-pages.scss"; }
+  content: "Syntax error: Undefined mixin 'styleguide-layout'.\A         on line 3 of /home/cs/work/jekyll/assets/styles/styleguide/sg-pages.scss, in `styleguide-layout'\A         from line 3 of /home/cs/work/jekyll/assets/styles/styleguide/sg-pages.scss\A \A 1: /home/cs/work/jekyll/assets/styles/styleguide/sg-pages.scss"; }

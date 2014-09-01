@@ -1,14 +1,8 @@
 html.styleguide {
   body {
-    header {
-      width: col(2);
-      float: left;
-    }
+    @include styleguide-layout;
     
     main {
-      width: calc(100% - #{col(2)});
-      float: left;
-    
       .styleguide-entry {
         @include show-title;
         
@@ -23,3 +17,6 @@ html.styleguide {
     }
   }
 }
+
+
+

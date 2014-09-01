@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="organisms styleguide ">
+<html lang="en" class="responsiveness styleguide ">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="humans.txt" />
     
-    <title>Organisms &mdash; Site title</title> 
+    <title>Responsiveness &mdash; Site title</title> 
     
     <!-- Compass with SASS -->
   	
@@ -280,42 +280,73 @@
 </header>
 
 <main>
-  <h1>Organisms</h1>
-
-
   
 
+
+
+
+
+
+
+
+
+
+
+<section id="responsiveness" class="styleguide-entry">
+  <h3>Responsiveness</h3>
+  
+  <article class="description">
+    <h3>Description</h3>
+    
+    
+  <p>
+    Breakpoints used for responsive layouts.
+  </p>
+
+  </article>
+  
+  
+  <article class="example">
+    <h3>Example</h3>
+    
+    
   
 
+  </article>
   
+  
+  <article class="technical">
+    <h3>Technical description</h3>
+    
+    
+  <p>
+    Since Compass has no support yet for Flexbox there is a set of mixins created using 
+    <a href="https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss" title="SCSS Flexbox Mixins">SCSS Flexbox Mixins</a>
+  </p>
+  <ul>
+    
+  </ul>
 
+  </article>
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
+  <article class="code">
+    <h3>Source code</h3>
+    
+    <nav>
+      <h3>Code snippets</h3>
+      
+      <ul>
+        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@mixin</span> <span class="nf">portrait</span> <span class="p">{</span>
+  <span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="nd">:</span> <span class="err">$</span><span class="nt">breakpoint-small-screen</span><span class="o">)</span> <span class="p">{</span>
+    <span class="k">@content</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></div></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+  </article>
+</section>
 
 </main>
 

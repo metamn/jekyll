@@ -1,0 +1,41 @@
+---
+layout: styleguide
+title: Responsiveness
+category: atoms
+scss: "responsiveness.scss"
+items:
+  - name: "portrait"
+    description: Displaying elements top to bottom instead of left to right
+    value: "(max-width: $breakpoint-small-screen)"
+---
+
+
+{% capture description %}
+  <p>
+    Breakpoints used for responsive layouts.
+  </p>
+{% endcapture %}
+
+
+{% capture example %}
+  
+{% endcapture %}
+
+
+
+{% capture technical %}
+  <p>
+    Since Compass has no support yet for Flexbox there is a set of mixins created using 
+    <a href="https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss" title="SCSS Flexbox Mixins">SCSS Flexbox Mixins</a>
+  </p>
+  <ul>
+    {% for related in page.related %}
+      <li>{{ related.name }}</li>
+    {% endfor %}
+  </ul>
+{% endcapture %}
+
+
+
+
+{% include styleguide/sg-styleguide-entry.html description=description example=example technical=technical %}

@@ -1,0 +1,10 @@
+---
+---
+
+{% for page in site.pages %}{% if page.title == "Responsiveness" %}{% for item in page.items %}
+@mixin {{ item.name }} {
+  @media only screen and {{ item.value }} {
+    @content
+  }
+}
+{% endfor %}{% endif %}{% endfor %}
