@@ -1,0 +1,43 @@
+---
+layout: styleguide
+title: Flexbox
+category: atoms
+scss: "flexbox.scss"
+related:
+  - name: Flexbox direction
+    description: Align flex items left to right, or bottom up
+    scss: "flexbox-direction.scss"
+  - name: Flexbox wrap
+    description: Wrap all flex items into a single, or multiple lines
+    scss: "flexbox-wrap.scss"
+---
+
+
+{% capture description %}
+  <p>
+    A flexible, responsive container.
+  </p>
+{% endcapture %}
+
+
+{% capture example %}
+  
+{% endcapture %}
+
+
+
+{% capture technical %}
+  <p>
+    This is a large collection of SCSS mixins around Flexbox.
+  </p>
+  <ul>
+    {% for related in page.related %}
+      <li>{{ related.name }}</li>
+    {% endfor %}
+  </ul>
+{% endcapture %}
+
+
+
+
+{% include styleguide/sg-styleguide-entry.html description=description example=example technical=technical %}
