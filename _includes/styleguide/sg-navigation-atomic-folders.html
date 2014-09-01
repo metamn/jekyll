@@ -1,9 +1,16 @@
-<li>{% include styleguide/sg-navigation-link.html title=include.folder %}</li>
+<article>
+  <h3>
+    {% include styleguide/sg-navigation-link.html title=include.folder %}
+  </h3>
+  
+  <ul>
+    {% for entry in site.pages reversed %}
+      {% if entry.category == include.folder %}
+        <li>{% include styleguide/sg-navigation-link.html title=entry.title folder=include.folder %}</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</article>
 
-<ul>
-  {% for entry in site.pages reversed %}
-    {% if entry.category == include.folder %}
-      <li>{% include styleguide/sg-navigation-link.html title=entry.title folder=include.folder %}</li>
-    {% endif %}
-  {% endfor %}
-</ul>
+
+

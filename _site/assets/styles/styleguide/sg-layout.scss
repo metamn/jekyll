@@ -4,11 +4,21 @@
     padding: 1.25em;
   }
   
+  // This makes an one column sidebar on landscape
+  header {
+    @include flex-basis(10%);
+  }
+  
   main {
     @include flex-grow(2);
   }
   
   @include portrait {
     @include flexbox-wrap(wrap);
+    
+    // This makes a multi-column sidebar on portraits, occupying the full-width of the screen
+    header {
+      @include flex-basis(100%);
+    }
   }
 }

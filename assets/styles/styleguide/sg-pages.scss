@@ -2,6 +2,10 @@ html.styleguide {
   body {
     @include styleguide-layout;
     
+    header {
+      @include styleguide-header;
+    }
+    
     main {
       .styleguide-entry {
         @include show-title;

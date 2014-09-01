@@ -1,0 +1,12 @@
+@mixin styleguide-header {
+  nav {
+    @include flexbox($wrap: wrap);
+    
+    article {
+      // This makes menu items  to be displayed in 1col on mobile, two cols on mobile landscape and up
+      @include flex-item($flex-basis: 15em);
+      @include show-title;
+      margin-top: 1.25em;
+    }
+  }
+}
