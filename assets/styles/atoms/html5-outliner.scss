@@ -1,0 +1,7 @@
+@mixin html5-outliner {
+  section, article, aside, nav {
+    > h3 {
+      display: none;
+    }
+  }
+}

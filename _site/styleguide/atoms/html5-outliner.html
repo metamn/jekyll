@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="flex-item styleguide ">
+<html lang="en" class="html5-outliner styleguide ">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="humans.txt" />
     
-    <title>Flex item &mdash; Site title</title> 
+    <title>HTML5 Outliner &mdash; Site title</title> 
     
     <!-- Compass with SASS -->
   	
@@ -244,15 +244,25 @@
 
 
 
-<section id="flex-item" class="styleguide-entry">
-  <h3>Flex item</h3>
+<section id="html5-outliner" class="styleguide-entry">
+  <h3>HTML5 Outliner</h3>
   
   <article class="description">
     <h3>Description</h3>
     
     
   <p>
-    Items of the flexible container.
+    All HTML5 elements must outline well. Each major grouping element 
+    
+      <code>section</code>
+    
+      <code>article</code>
+    
+      <code>aside</code>
+    
+      <code>nav</code>
+    
+    has a title by default which is hidden on the user interface but visible for outliner bots.
   </p>
 
   </article>
@@ -277,18 +287,6 @@
   </p>
   <ul>
     
-      <li>Flex item order</li>
-    
-      <li>Flex grow</li>
-    
-      <li>Flex shrink</li>
-    
-      <li>Flex basis</li>
-    
-      <li>Flex</li>
-    
-      <li>Flex align</li>
-    
   </ul>
 
   </article>
@@ -300,13 +298,12 @@
       <h3>Code snippets</h3>
       
       <ul>
-        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// How items are aligned inside a flexbox
-// - https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss
-</span>
-<span class="k">@mixin</span> <span class="nf">flex-item</span><span class="p">(</span><span class="nv">$order</span><span class="o">:</span> <span class="m">0</span><span class="o">,</span> <span class="nv">$flex-grow</span><span class="o">:</span> <span class="m">0</span><span class="o">,</span> <span class="nv">$flex-shrink</span><span class="o">:</span> <span class="m">1</span><span class="o">,</span> <span class="nv">$flex-basis</span><span class="o">:</span> <span class="nb">auto</span><span class="o">,</span> <span class="nv">$align-self</span><span class="o">:</span> <span class="nb">auto</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">@include</span> <span class="nd">flex-order</span><span class="p">(</span><span class="nv">$order</span><span class="p">);</span>
-  <span class="k">@include</span> <span class="nd">flex</span><span class="p">(</span><span class="nv">$flex-grow</span><span class="o">,</span> <span class="nv">$flex-shrink</span><span class="o">,</span> <span class="nv">$flex-basis</span><span class="p">);</span>
-  <span class="k">@include</span> <span class="nd">flex-align</span><span class="p">(</span><span class="nv">$align-self</span><span class="p">);</span>
+        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@mixin</span> <span class="nf">html5-outliner</span> <span class="p">{</span>
+  <span class="nt">section</span><span class="o">,</span> <span class="nt">article</span><span class="o">,</span> <span class="nt">aside</span><span class="o">,</span> <span class="nt">nav</span> <span class="p">{</span>
+    <span class="o">&gt;</span> <span class="nt">h3</span> <span class="p">{</span>
+      <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
 <span class="p">}</span></code></pre></div></li>
         <li></li>
         <li></li>

@@ -1,5 +1,6 @@
 html {
   body {
+    @include html5-outliner;
     @include flexbox;
   }
 }

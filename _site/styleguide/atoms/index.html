@@ -62,6 +62,14 @@
     
   
     
+  
+    
+      <li>
+  <a href="/styleguide/atoms/html5-outliner.html" title="HTML5 Outliner">HTML5 Outliner</a>
+</li>
+    
+  
+    
       <li>
   <a href="/styleguide/atoms/flexbox.html" title="Flexbox">Flexbox</a>
 </li>
@@ -88,6 +96,10 @@
 </li>
 
 <ul>
+  
+    
+  
+    
   
     
   
@@ -141,6 +153,10 @@
   
     
   
+    
+  
+    
+  
 </ul>
 
     <li>
@@ -148,6 +164,10 @@
 </li>
 
 <ul>
+  
+    
+  
+    
   
     
   
@@ -201,6 +221,10 @@
   
     
   
+    
+  
+    
+  
 </ul>
 
   </ul>
@@ -222,6 +246,91 @@
   
 
   
+
+  
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+<section id="html5-outliner" class="styleguide-entry">
+  <h3>HTML5 Outliner</h3>
+  
+  <article class="description">
+    <h3>Description</h3>
+    
+    
+  <p>
+    All HTML5 elements must outline well. Each major grouping element 
+    
+      <code>section</code>
+    
+      <code>article</code>
+    
+      <code>aside</code>
+    
+      <code>nav</code>
+    
+    has a title by default which is hidden on the user interface but visible for outliner bots.
+  </p>
+
+  </article>
+  
+  
+  <article class="example">
+    <h3>Example</h3>
+    
+    
+  
+
+  </article>
+  
+  
+  <article class="technical">
+    <h3>Technical description</h3>
+    
+    
+  <p>
+    Since Compass has no support yet for Flexbox there is a set of mixins created using 
+    <a href="https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss" title="SCSS Flexbox Mixins">SCSS Flexbox Mixins</a>
+  </p>
+  <ul>
+    
+  </ul>
+
+  </article>
+  
+  <article class="code">
+    <h3>Source code</h3>
+    
+    <nav>
+      <h3>Code snippets</h3>
+      
+      <ul>
+        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@mixin</span> <span class="nf">html5-outliner</span> <span class="p">{</span>
+  <span class="nt">section</span><span class="o">,</span> <span class="nt">article</span><span class="o">,</span> <span class="nt">aside</span><span class="o">,</span> <span class="nt">nav</span> <span class="p">{</span>
+    <span class="o">&gt;</span> <span class="nt">h3</span> <span class="p">{</span>
+      <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></div></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+  </article>
+</section>
 
   
 
@@ -266,7 +375,8 @@
     
     
   <p>
-    This is a large collection of SCSS mixins around Flexbox.
+    Since Compass has no support yet for Flexbox there is a set of mixins created using 
+    <a href="https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss" title="SCSS Flexbox Mixins">SCSS Flexbox Mixins</a>
   </p>
   <ul>
     
@@ -367,7 +477,8 @@
     
     
   <p>
-    This is a large collection of SCSS mixins around Flex items.
+    Since Compass has no support yet for Flexbox there is a set of mixins created using 
+    <a href="https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss" title="SCSS Flexbox Mixins">SCSS Flexbox Mixins</a>
   </p>
   <ul>
     

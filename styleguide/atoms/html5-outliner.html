@@ -1,21 +1,23 @@
 ---
 layout: styleguide
-title: Flexbox
+title: HTML5 Outliner
 category: atoms
-scss: "flex/flexbox.scss"
-related:
-  - name: Flexbox direction
-    description: Align flex items left to right, or bottom up
-    scss: "flex/flexbox-direction.scss"
-  - name: Flexbox wrap
-    description: Wrap all flex items into a single, or multiple lines
-    scss: "flex/flexbox-wrap.scss"
+scss: "html5-outliner.scss"
+elements:
+  - section
+  - article
+  - aside
+  - nav
 ---
 
 
 {% capture description %}
   <p>
-    A flexible, responsive container.
+    All HTML5 elements must outline well. Each major grouping element 
+    {% for element in page.elements %}
+      <code>{{ element }}</code>
+    {% endfor %}
+    has a title by default which is hidden on the user interface but visible for outliner bots.
   </p>
 {% endcapture %}
 
