@@ -1,0 +1,20 @@
+$font-size-tablet: 100%;
+$font-size-laptop: 100%;
+$font-size-desktop: 125%;
+$line-height: 1.25;
+$lem: 1.25em;
+
+
+
+@mixin responsive-typography {
+  font-size: $font-size-laptop;
+  line-height: $line-height;
+    
+  @include portrait {
+    font-size: $font-size-tablet;  
+  } 
+  
+  @include large-screen-and-up {
+    font-size: $font-size-desktop;  
+  }
+}

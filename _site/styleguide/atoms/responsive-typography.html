@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="colors styleguide ">
+<html lang="en" class="responsive-typography styleguide ">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="humans.txt" />
     
-    <title>Colors &mdash; Site title</title> 
+    <title>Responsive Typography &mdash; Site title</title> 
     
     <!-- Compass with SASS -->
   	
@@ -349,15 +349,15 @@
 
 
 
-<section id="colors" class="styleguide-entry">
-  <h3>Colors</h3>
+<section id="responsive-typography" class="styleguide-entry">
+  <h3>Responsive Typography</h3>
   
   <article class="description">
     <h3>Description</h3>
     
     
   <p>
-    All the colors used by the site.
+    Responsive typography. 
   </p>
 
   </article>
@@ -367,23 +367,7 @@
     <h3>Example</h3>
     
     
-  <div class="colors">
-    
-      <div class="color">
-        <span class="rectangel"></span>
-        <span class="name">white</span>
-        <span class="value">whitey</span>
-        <span class="description">Used for the site background</span>
-      </div>
-    
-      <div class="color">
-        <span class="rectangel"></span>
-        <span class="name">black</span>
-        <span class="value">hsla(170, 45%, 5%, 1)</span>
-        <span class="description">Used for text color</span>
-      </div>
-    
-  </div>
+  
 
   </article>
   
@@ -393,8 +377,12 @@
     
     
   <p>
-    This is a short technical description
+    Since Compass has no support yet for Flexbox there is a set of mixins created using 
+    <a href="https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss" title="SCSS Flexbox Mixins">SCSS Flexbox Mixins</a>
   </p>
+  <ul>
+    
+  </ul>
 
   </article>
   
@@ -405,8 +393,26 @@
       <h3>Code snippets</h3>
       
       <ul>
-        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$white</span><span class="p">:</span> <span class="n">whitey</span><span class="p">;</span>
-<span class="nv">$black</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">170</span><span class="o">,</span> <span class="m">45%</span><span class="o">,</span> <span class="m">5%</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span></code></pre></div></li>
+        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$font-size-tablet</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="nv">$font-size-laptop</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="nv">$font-size-desktop</span><span class="p">:</span> <span class="m">125%</span><span class="p">;</span>
+<span class="nv">$line-height</span><span class="p">:</span> <span class="m">1</span><span class="mi">.25</span><span class="p">;</span>
+<span class="nv">$lem</span><span class="p">:</span> <span class="m">1</span><span class="mi">.25em</span><span class="p">;</span>
+
+
+
+<span class="k">@mixin</span> <span class="nf">responsive-typography</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="nv">$font-size-laptop</span><span class="p">;</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="nv">$line-height</span><span class="p">;</span>
+    
+  <span class="k">@include</span> <span class="nd">portrait</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="nv">$font-size-tablet</span><span class="p">;</span>  
+  <span class="p">}</span> 
+  
+  <span class="k">@include</span> <span class="nd">large-screen-and-up</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="nv">$font-size-desktop</span><span class="p">;</span>  
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></div></li>
         <li></li>
         <li></li>
       </ul>

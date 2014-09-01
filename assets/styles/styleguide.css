@@ -21,11 +21,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* No files to import found in molecules/* */
 /* No files to import found in organisms/* */
 /* No files to import found in structures/* */
-html body { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ }
+html body { font-size: 100%; line-height: 1.25; display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ }
+@media only screen and (max-width: 64em) { html body { font-size: 100%; } }
+@media only screen and (min-width: 90em) { html body { font-size: 125%; } }
 html body section > h3, html body article > h3, html body aside > h3, html body nav > h3 { display: none; }
 
 html.styleguide body header, html.styleguide body main { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: auto; -moz-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; -webkit-box-pack: auto; -ms-flex-pack: auto; -webkit-justify-content: auto; -moz-justify-content: auto; justify-content: auto; padding: 1.25em; }
-html.styleguide body header { -webkit-flex-basis: 10%; -moz-flex-basis: 10%; -ms-flex-preferred-size: 10%; flex-basis: 10%; }
+html.styleguide body header { -webkit-flex-basis: 15em; -moz-flex-basis: 15em; -ms-flex-preferred-size: 15em; flex-basis: 15em; }
 html.styleguide body main { -webkit-box-flex: 2; -webkit-flex-grow: 2; -moz-flex-grow: 2; -ms-flex-positive: 2; flex-grow: 2; }
 @media only screen and (max-width: 64em) { html.styleguide body { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
   html.styleguide body header { -webkit-flex-basis: 100%; -moz-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; } }

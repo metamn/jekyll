@@ -60,6 +60,14 @@
       
     
       
+        <li>
+  <a href="/styleguide/atoms/responsive-typography.html" title="Responsive Typography">Responsive Typography</a>
+</li>
+      
+    
+      
+    
+      
     
       
     
@@ -156,6 +164,10 @@
     
       
     
+      
+    
+      
+    
   </ul>
 </article>
 
@@ -170,6 +182,10 @@
   </h3>
   
   <ul>
+    
+      
+    
+      
     
       
     
@@ -254,6 +270,10 @@
     
       
     
+      
+    
+      
+    
   </ul>
 </article>
 
@@ -268,6 +288,10 @@
   </h3>
   
   <ul>
+    
+      
+    
+      
     
       
     
@@ -371,6 +395,12 @@
       <ul>
         <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@mixin</span> <span class="nf">portrait</span> <span class="p">{</span>
   <span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="nd">:</span> <span class="err">$</span><span class="nt">breakpoint-small-screen</span><span class="o">)</span> <span class="p">{</span>
+    <span class="k">@content</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@mixin</span> <span class="nf">large-screen-and-up</span> <span class="p">{</span>
+  <span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="nd">:</span> <span class="err">$</span><span class="nt">breakpoint-large-screen</span><span class="o">)</span> <span class="p">{</span>
     <span class="k">@content</span>
   <span class="p">}</span>
 <span class="p">}</span></code></pre></div></li>

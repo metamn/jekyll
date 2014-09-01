@@ -4,9 +4,9 @@
     padding: 1.25em;
   }
   
-  // This makes an one column sidebar on landscape
+  // This makes a one column sidebar on landscape
   header {
-    @include flex-basis(10%);
+    @include flex-basis(15em);
   }
   
   main {

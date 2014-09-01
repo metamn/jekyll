@@ -4,3 +4,9 @@
     @content
   }
 }
+
+@mixin large-screen-and-up {
+  @media only screen and (min-width: $breakpoint-large-screen) {
+    @content
+  }
+}

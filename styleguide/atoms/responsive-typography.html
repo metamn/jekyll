@@ -1,21 +1,30 @@
 ---
 layout: styleguide
-title: Breakpoints
+title: Responsive Typography
 category: atoms
-scss: "breakpoints.scss"
+scss: "responsive-typography.scss"
 items:
-  - name: "$breakpoint-small-screen"
-    description: Screens width less than 1024px width
-    value: "64em"
-  - name: "$breakpoint-large-screen"
-    description: Screens width more than 1440px width
-    value: "90em"
+  - name: "font-size-tablet"
+    description: Font size for small screens
+    value: "100%"
+  - name: "font-size-laptop"
+    description: Font size for laptops and normal desktop screens
+    value: "100%"
+  - name: "font-size-desktop"
+    description: Font size for monitors and large screens
+    value: "125%"
+  - name: "line-height"
+    description: 125% of the font size
+    value: "1.25"
+  - name: "lem"
+    description: The line height in EM
+    value: "1.25em"
 ---
 
 
 {% capture description %}
   <p>
-    Breakpoints used for responsive layouts.
+    Responsive typography. 
   </p>
 {% endcapture %}
 
