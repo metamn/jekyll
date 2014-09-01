@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="organisms styleguide ">
+<html lang="en" class="flex-item styleguide ">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="humans.txt" />
     
-    <title>Organisms &mdash; Site title</title> 
+    <title>Flex item &mdash; Site title</title> 
     
     <!-- Compass with SASS -->
   	
@@ -208,30 +208,87 @@
 </header>
 
 <main>
-  <h1>Organisms</h1>
-
-
   
 
+
+
+
+
+
+
+
+
+
+
+<section id="flex-item" class="styleguide-entry">
+  <h3>Flex item</h3>
+  
+  <article class="description">
+    <h3>Description</h3>
+    
+    
+  <p>
+    Items of the flexible container.
+  </p>
+
+  </article>
+  
+  
+  <article class="example">
+    <h3>Example</h3>
+    
+    
   
 
+  </article>
   
+  
+  <article class="technical">
+    <h3>Technical description</h3>
+    
+    
+  <p>
+    This is a large collection of SCSS mixins around Flex items.
+  </p>
+  <ul>
+    
+      <li>Flex item order</li>
+    
+      <li>Flex grow</li>
+    
+      <li>Flex shrink</li>
+    
+      <li>Flex basis</li>
+    
+      <li>Flex</li>
+    
+      <li>Flex align</li>
+    
+  </ul>
 
+  </article>
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
+  <article class="code">
+    <h3>Source code</h3>
+    
+    <nav>
+      <h3>Code snippets</h3>
+      
+      <ul>
+        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// How items are aligned inside a flexbox
+// - https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss
+</span>
+<span class="k">@mixin</span> <span class="nf">flex-item</span><span class="p">(</span><span class="nv">$order</span><span class="o">:</span> <span class="m">0</span><span class="o">,</span> <span class="nv">$flex-grow</span><span class="o">:</span> <span class="m">0</span><span class="o">,</span> <span class="nv">$flex-shrink</span><span class="o">:</span> <span class="m">1</span><span class="o">,</span> <span class="nv">$flex-basis</span><span class="o">:</span> <span class="nb">auto</span><span class="o">,</span> <span class="nv">$align-self</span><span class="o">:</span> <span class="nb">auto</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">flex-order</span><span class="p">(</span><span class="nv">$order</span><span class="p">);</span>
+  <span class="k">@include</span> <span class="nd">flex</span><span class="p">(</span><span class="nv">$flex-grow</span><span class="o">,</span> <span class="nv">$flex-shrink</span><span class="o">,</span> <span class="nv">$flex-basis</span><span class="p">);</span>
+  <span class="k">@include</span> <span class="nd">flex-align</span><span class="p">(</span><span class="nv">$align-self</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+  </article>
+</section>
 
 </main>
 

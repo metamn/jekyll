@@ -1,0 +1,55 @@
+---
+layout: styleguide
+title: Flex item
+category: atoms
+scss: "flex/flex-item.scss"
+related:
+  - name: Flex item order
+    description: Change the original order of an item
+    scss: "flex/flex-order.scss"
+  - name: Flex grow
+    description: Multiply the size of an item
+    scss: "flex/flex-grow.scss"
+  - name: Flex shrink
+    description: Reduce the size of an item
+    scss: "flex/flex-shrink.scss"
+  - name: Flex basis
+    description: The initial width (or height) of an item
+    scss: "flex/flex-basis.scss"
+  - name: Flex 
+    description: Shorthand settings for grow, shrink and basis
+    scss: "flex/flex-grow.scss"
+  - name: Flex align
+    description: Change the default alognemnt of an item
+    scss: "flex/flex-align.scss"
+---
+
+
+{% capture description %}
+  <p>
+    Items of the flexible container.
+  </p>
+{% endcapture %}
+
+
+{% capture example %}
+  
+{% endcapture %}
+
+
+
+{% capture technical %}
+  <p>
+    This is a large collection of SCSS mixins around Flex items.
+  </p>
+  <ul>
+    {% for related in page.related %}
+      <li>{{ related.name }}</li>
+    {% endfor %}
+  </ul>
+{% endcapture %}
+
+
+
+
+{% include styleguide/sg-styleguide-entry.html description=description example=example technical=technical %}
