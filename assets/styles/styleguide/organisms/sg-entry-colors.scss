@@ -12,7 +12,7 @@
         figure {
           @include flex-item;
           background: red;
-          width: $lem * 5;
+          min-width: $lem * 5; // simple 'width' doesn't works on mobiles
         }
         
         aside {
