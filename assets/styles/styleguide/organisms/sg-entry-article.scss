@@ -1,0 +1,21 @@
+@mixin sg-entry-article {
+  @include show-title;
+  padding-top: $lem;
+
+  h3 {
+    @include font(styleguide-item-subtitle);
+  }
+
+  &.description {
+    @include hide-title;
+  }
+
+  &.code {
+    nav ul li {
+      @include sg-highlight;
+    }
+  }
+
+  &.example { 
+  }
+}

@@ -1,4 +1,5 @@
-{% for entry in site.pages reversed %}
+{% assign entries = site.pages | sort: 'order' %}
+{% for entry in entries %}
   {% if entry.category == include.folder %}
     {{ entry.content }}
   {% endif %}

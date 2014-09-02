@@ -49,41 +49,42 @@
   
   <ul>
     
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
       
     
       
         <li>
-  <a href="/styleguide/atoms/responsiveness.html" title="Responsiveness">Responsiveness</a>
+  <a href="/styleguide/atoms/colors.html" title="Colors">Colors</a>
 </li>
       
     
       
-    
-      
         <li>
-  <a href="/styleguide/atoms/responsive-typography.html" title="Responsive Typography">Responsive Typography</a>
-</li>
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-        <li>
-  <a href="/styleguide/atoms/html5-outliner.html" title="HTML5 Outliner">HTML5 Outliner</a>
+  <a href="/styleguide/atoms/fonts.html" title="Fonts">Fonts</a>
 </li>
       
     
@@ -94,10 +95,20 @@
       
     
       
+        <li>
+  <a href="/styleguide/atoms/breakpoints.html" title="Breakpoints">Breakpoints</a>
+</li>
+      
     
       
         <li>
-  <a href="/styleguide/atoms/fonts.html" title="Fonts">Fonts</a>
+  <a href="/styleguide/atoms/responsiveness.html" title="Responsiveness">Responsiveness</a>
+</li>
+      
+    
+      
+        <li>
+  <a href="/styleguide/atoms/responsive-typography.html" title="Responsive Typography">Responsive Typography</a>
 </li>
       
     
@@ -114,18 +125,8 @@
       
     
       
-    
-      
         <li>
-  <a href="/styleguide/atoms/colors.html" title="Colors">Colors</a>
-</li>
-      
-    
-      
-    
-      
-        <li>
-  <a href="/styleguide/atoms/breakpoints.html" title="Breakpoints">Breakpoints</a>
+  <a href="/styleguide/atoms/html5-outliner.html" title="HTML5 Outliner">HTML5 Outliner</a>
 </li>
       
     
@@ -143,6 +144,7 @@
   </h3>
   
   <ul>
+    
     
       
     
@@ -203,6 +205,7 @@
   
   <ul>
     
+    
       
     
       
@@ -261,6 +264,7 @@
   </h3>
   
   <ul>
+    
     
       
     
@@ -321,6 +325,7 @@
   
   <ul>
     
+    
       
     
       
@@ -378,73 +383,14 @@
   <h1>Atoms</h1>
 
 
-  
-
-  
-    {% capture description %}
-  <p>
-    RRRRRR used for responsive layouts.
-  </p>
-{% endcapture %}
-
-
-{% capture example %}
-  
-{% endcapture %}
-
-
-
-{% capture technical %}
-  <p>
-    Since Compass has no support yet for Flexbox there is a set of mixins created using 
-    <a href="https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss" title="SCSS Flexbox Mixins">SCSS Flexbox Mixins</a>
-  </p>
-  <ul>
-    {% for related in page.related %}
-      <li>{{ related.name }}</li>
-    {% endfor %}
-  </ul>
-{% endcapture %}
-
-
-
-
-{% include styleguide/sg-styleguide-entry.html description=description example=example technical=technical %}
 
   
 
   
 
   
-    {% capture description %}
-  <p>
-    RRRResponsive typography. 
-  </p>
-{% endcapture %}
 
-
-{% capture example %}
   
-{% endcapture %}
-
-
-
-{% capture technical %}
-  <p>
-    Since Compass has no support yet for Flexbox there is a set of mixins created using 
-    <a href="https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss" title="SCSS Flexbox Mixins">SCSS Flexbox Mixins</a>
-  </p>
-  <ul>
-    {% for related in page.related %}
-      <li>{{ related.name }}</li>
-    {% endfor %}
-  </ul>
-{% endcapture %}
-
-
-
-
-{% include styleguide/sg-styleguide-entry.html description=description example=example technical=technical %}
 
   
 
@@ -477,25 +423,15 @@
 
 
 
-<section id="html5-outliner" class="styleguide-entry">
-  <h3>HTML5 Outliner</h3>
+<section id="colors" class="styleguide-entry">
+  <h3>Colors</h3>
   
   <article class="description">
     <h3>Description</h3>
     
     
   <p>
-    All HTML5 elements must outline well. Each major grouping element 
-    
-      <code>section</code>
-    
-      <code>article</code>
-    
-      <code>aside</code>
-    
-      <code>nav</code>
-    
-    has a title by default which is hidden on the user interface but visible for HTML5 outliner bots.
+    All the colors used by the site.
   </p>
 
   </article>
@@ -505,7 +441,32 @@
     <h3>Example</h3>
     
     
-  
+  <section>
+    <h3>Color swatches</h3>
+    
+      <article>
+        <h3>white</h3>
+        <figure>&nbsp;</figure>
+        <aside>
+          <h3>Description</h3>
+          <p>white</p>
+          <p>whitey</p>
+          <p>Used for the site background</p>
+        </aside>
+      </article>
+    
+      <article>
+        <h3>black</h3>
+        <figure>&nbsp;</figure>
+        <aside>
+          <h3>Description</h3>
+          <p>black</p>
+          <p>hsla(170, 45%, 5%, 1)</p>
+          <p>Used for text color</p>
+        </aside>
+      </article>
+    
+  </section>
 
   </article>
   
@@ -515,12 +476,8 @@
     
     
   <p>
-    Since Compass has no support yet for Flexbox there is a set of mixins created using 
-    <a href="https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss" title="SCSS Flexbox Mixins">SCSS Flexbox Mixins</a>
+    This is a short technical description
   </p>
-  <ul>
-    
-  </ul>
 
   </article>
   
@@ -531,108 +488,14 @@
       <h3>Code snippets</h3>
       
       <ul>
-        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@mixin</span> <span class="nf">html5-outliner</span> <span class="p">{</span>
-  <span class="nt">section</span><span class="o">,</span> <span class="nt">article</span><span class="o">,</span> <span class="nt">aside</span><span class="o">,</span> <span class="nt">nav</span> <span class="p">{</span>
-    <span class="k">@include</span> <span class="nd">hide-title</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="k">@mixin</span> <span class="nf">hide-title</span> <span class="p">{</span>
-  <span class="o">&gt;</span> <span class="nt">h3</span> <span class="p">{</span>
-    <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="k">@mixin</span> <span class="nf">show-title</span> <span class="p">{</span>
-  <span class="o">&gt;</span> <span class="nt">h3</span> <span class="p">{</span>
-    <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span></code></pre></div></li>
+        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$white</span><span class="p">:</span> <span class="n">whitey</span><span class="p">;</span>
+<span class="nv">$black</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">170</span><span class="o">,</span> <span class="m">45%</span><span class="o">,</span> <span class="m">5%</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span></code></pre></div></li>
         <li></li>
         <li></li>
       </ul>
     </nav>
   </article>
 </section>
-
-  
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-<section id="headings" class="styleguide-entry">
-  <h3>Headings</h3>
-  
-  <article class="description">
-    <h3>Description</h3>
-    
-    
-  <p>
-    Heading levels based on Fibonacci numbers
-  </p>
-
-  </article>
-  
-  
-  <article class="example">
-    <h3>Example</h3>
-    
-    
-  
-
-  </article>
-  
-  
-  <article class="technical">
-    <h3>Technical description</h3>
-    
-    
-  <p>
-    Since Compass has no support yet for Flexbox there is a set of mixins created using 
-    <a href="https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss" title="SCSS Flexbox Mixins">SCSS Flexbox Mixins</a>
-  </p>
-  <ul>
-    
-  </ul>
-
-  </article>
-  
-  <article class="code">
-    <h3>Source code</h3>
-    
-    <nav>
-      <h3>Code snippets</h3>
-      
-      <ul>
-        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Heading levels
-// - based on lamb.cc/typograph using Le Corbuisier ratios
-// - the even sizes are Fibonacci numbers, the odd size are an in between ratio
-</span><span class="nv">$heading-level-1</span><span class="p">:</span> <span class="m">1</span><span class="mi">.3077em</span><span class="p">;</span>
-<span class="nv">$heading-level-2</span><span class="p">:</span> <span class="m">1</span><span class="mi">.6154em</span><span class="p">;</span>
-<span class="nv">$heading-level-3</span><span class="p">:</span> <span class="m">2</span><span class="mi">.1154em</span><span class="p">;</span>
-<span class="nv">$heading-level-4</span><span class="p">:</span> <span class="m">2</span><span class="mi">.6154em</span><span class="p">;</span>
-<span class="nv">$heading-level-5</span><span class="p">:</span> <span class="m">3</span><span class="mi">.4231em</span><span class="p">;</span>
-<span class="nv">$heading-level-6</span><span class="p">:</span> <span class="m">4</span><span class="mi">.2308em</span><span class="p">;</span>
-<span class="nv">$heading-level-7</span><span class="p">:</span> <span class="m">5</span><span class="mi">.5385em</span><span class="p">;</span>
-<span class="nv">$heading-level-8</span><span class="p">:</span> <span class="m">6</span><span class="mi">.8462em</span><span class="p">;</span></code></pre></div></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </nav>
-  </article>
-</section>
-
-  
 
   
 
@@ -744,6 +607,217 @@
 
 
 
+<section id="headings" class="styleguide-entry">
+  <h3>Headings</h3>
+  
+  <article class="description">
+    <h3>Description</h3>
+    
+    
+  <p>
+    Heading levels based on Fibonacci numbers
+  </p>
+
+  </article>
+  
+  
+  <article class="example">
+    <h3>Example</h3>
+    
+    
+  
+
+  </article>
+  
+  
+  <article class="technical">
+    <h3>Technical description</h3>
+    
+    
+  <p>
+    Since Compass has no support yet for Flexbox there is a set of mixins created using 
+    <a href="https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss" title="SCSS Flexbox Mixins">SCSS Flexbox Mixins</a>
+  </p>
+  <ul>
+    
+  </ul>
+
+  </article>
+  
+  <article class="code">
+    <h3>Source code</h3>
+    
+    <nav>
+      <h3>Code snippets</h3>
+      
+      <ul>
+        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Heading levels
+// - based on lamb.cc/typograph using Le Corbuisier ratios
+// - the even sizes are Fibonacci numbers, the odd size are an in between ratio
+</span><span class="nv">$heading-level-1</span><span class="p">:</span> <span class="m">1</span><span class="mi">.3077em</span><span class="p">;</span>
+<span class="nv">$heading-level-2</span><span class="p">:</span> <span class="m">1</span><span class="mi">.6154em</span><span class="p">;</span>
+<span class="nv">$heading-level-3</span><span class="p">:</span> <span class="m">2</span><span class="mi">.1154em</span><span class="p">;</span>
+<span class="nv">$heading-level-4</span><span class="p">:</span> <span class="m">2</span><span class="mi">.6154em</span><span class="p">;</span>
+<span class="nv">$heading-level-5</span><span class="p">:</span> <span class="m">3</span><span class="mi">.4231em</span><span class="p">;</span>
+<span class="nv">$heading-level-6</span><span class="p">:</span> <span class="m">4</span><span class="mi">.2308em</span><span class="p">;</span>
+<span class="nv">$heading-level-7</span><span class="p">:</span> <span class="m">5</span><span class="mi">.5385em</span><span class="p">;</span>
+<span class="nv">$heading-level-8</span><span class="p">:</span> <span class="m">6</span><span class="mi">.8462em</span><span class="p">;</span></code></pre></div></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+  </article>
+</section>
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+<section id="breakpoints" class="styleguide-entry">
+  <h3>Breakpoints</h3>
+  
+  <article class="description">
+    <h3>Description</h3>
+    
+    
+  <p>
+    BBB Breakpoints used for responsive layouts.
+  </p>
+
+  </article>
+  
+  
+  <article class="example">
+    <h3>Example</h3>
+    
+    
+  
+
+  </article>
+  
+  
+  <article class="technical">
+    <h3>Technical description</h3>
+    
+    
+  <p>
+    Since Compass has no support yet for Flexbox there is a set of mixins created using 
+    <a href="https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss" title="SCSS Flexbox Mixins">SCSS Flexbox Mixins</a>
+  </p>
+  <ul>
+    
+  </ul>
+
+  </article>
+  
+  <article class="code">
+    <h3>Source code</h3>
+    
+    <nav>
+      <h3>Code snippets</h3>
+      
+      <ul>
+        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$breakpoint-small-screen</span><span class="p">:</span> <span class="m">64em</span><span class="p">;</span>
+<span class="nv">$breakpoint-large-screen</span><span class="p">:</span> <span class="m">90em</span><span class="p">;</span></code></pre></div></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+  </article>
+</section>
+
+  
+
+  
+    {% capture description %}
+  <p>
+    RRRRRR used for responsive layouts.
+  </p>
+{% endcapture %}
+
+
+{% capture example %}
+  
+{% endcapture %}
+
+
+
+{% capture technical %}
+  <p>
+    Since Compass has no support yet for Flexbox there is a set of mixins created using 
+    <a href="https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss" title="SCSS Flexbox Mixins">SCSS Flexbox Mixins</a>
+  </p>
+  <ul>
+    {% for related in page.related %}
+      <li>{{ related.name }}</li>
+    {% endfor %}
+  </ul>
+{% endcapture %}
+
+
+
+
+{% include styleguide/sg-styleguide-entry.html description=description example=example technical=technical %}
+
+  
+
+  
+    {% capture description %}
+  <p>
+    RRRResponsive typography. 
+  </p>
+{% endcapture %}
+
+
+{% capture example %}
+  
+{% endcapture %}
+
+
+
+{% capture technical %}
+  <p>
+    Since Compass has no support yet for Flexbox there is a set of mixins created using 
+    <a href="https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss" title="SCSS Flexbox Mixins">SCSS Flexbox Mixins</a>
+  </p>
+  <ul>
+    {% for related in page.related %}
+      <li>{{ related.name }}</li>
+    {% endfor %}
+  </ul>
+{% endcapture %}
+
+
+
+
+{% include styleguide/sg-styleguide-entry.html description=description example=example technical=technical %}
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
 <section id="flexbox" class="styleguide-entry">
   <h3>Flexbox</h3>
   
@@ -817,11 +891,11 @@
   <span class="p">}</span> 
   
   <span class="k">@if</span> <span class="p">(</span><span class="nv">$direction</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">@include</span> <span class="nd">flexbox-direction</span><span class="p">(</span><span class="nv">$direction</span><span class="p">)</span>
+    <span class="k">@include</span> <span class="nd">flexbox-direction</span><span class="p">(</span><span class="nv">$direction</span><span class="p">);</span>
   <span class="p">}</span>
   
   <span class="k">@if</span> <span class="p">(</span><span class="nv">$wrap</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">@include</span> <span class="nd">flexbox-wrap</span><span class="p">(</span><span class="nv">$wrap</span><span class="p">)</span>
+    <span class="k">@include</span> <span class="nd">flexbox-wrap</span><span class="p">(</span><span class="nv">$wrap</span><span class="p">);</span>
   <span class="p">}</span>
  <span class="p">}</span></code></pre></div></li>
         <li></li>
@@ -908,7 +982,7 @@
 <span class="k">@mixin</span> <span class="nf">flex-item</span><span class="p">(</span><span class="nv">$order</span><span class="o">:</span> <span class="m">0</span><span class="o">,</span> <span class="nv">$flex-grow</span><span class="o">:</span> <span class="m">0</span><span class="o">,</span> <span class="nv">$flex-shrink</span><span class="o">:</span> <span class="m">1</span><span class="o">,</span> <span class="nv">$flex-basis</span><span class="o">:</span> <span class="nb">auto</span><span class="o">,</span> <span class="nv">$align-self</span><span class="o">:</span> <span class="nb">auto</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">@include</span> <span class="nd">flex-order</span><span class="p">(</span><span class="nv">$order</span><span class="p">);</span>
   <span class="k">@include</span> <span class="nd">flex</span><span class="p">(</span><span class="nv">$flex-grow</span><span class="o">,</span> <span class="nv">$flex-shrink</span><span class="o">,</span> <span class="nv">$flex-basis</span><span class="p">);</span>
-  <span class="k">@include</span> <span class="nd">flex-align</span><span class="p">(</span><span class="nv">$align-self</span><span class="p">);</span>
+  <span class="k">@include</span> <span class="nd">flex-align-self</span><span class="p">(</span><span class="nv">$align-self</span><span class="p">);</span>
 <span class="p">}</span></code></pre></div></li>
         <li></li>
         <li></li>
@@ -920,8 +994,6 @@
   
 
   
-
-  
     
 
 
@@ -934,97 +1006,25 @@
 
 
 
-<section id="colors" class="styleguide-entry">
-  <h3>Colors</h3>
+<section id="html5-outliner" class="styleguide-entry">
+  <h3>HTML5 Outliner</h3>
   
   <article class="description">
     <h3>Description</h3>
     
     
   <p>
-    All the colors used by the site.
-  </p>
-
-  </article>
-  
-  
-  <article class="example">
-    <h3>Example</h3>
+    All HTML5 elements must outline well. Each major grouping element 
     
+      <code>section</code>
     
-  <div class="colors">
+      <code>article</code>
     
-      <div class="color">
-        <span class="rectangel"></span>
-        <span class="name">white</span>
-        <span class="value">whitey</span>
-        <span class="description">Used for the site background</span>
-      </div>
+      <code>aside</code>
     
-      <div class="color">
-        <span class="rectangel"></span>
-        <span class="name">black</span>
-        <span class="value">hsla(170, 45%, 5%, 1)</span>
-        <span class="description">Used for text color</span>
-      </div>
+      <code>nav</code>
     
-  </div>
-
-  </article>
-  
-  
-  <article class="technical">
-    <h3>Technical description</h3>
-    
-    
-  <p>
-    This is a short technical description
-  </p>
-
-  </article>
-  
-  <article class="code">
-    <h3>Source code</h3>
-    
-    <nav>
-      <h3>Code snippets</h3>
-      
-      <ul>
-        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$white</span><span class="p">:</span> <span class="n">whitey</span><span class="p">;</span>
-<span class="nv">$black</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">170</span><span class="o">,</span> <span class="m">45%</span><span class="o">,</span> <span class="m">5%</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span></code></pre></div></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </nav>
-  </article>
-</section>
-
-  
-
-  
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-<section id="breakpoints" class="styleguide-entry">
-  <h3>Breakpoints</h3>
-  
-  <article class="description">
-    <h3>Description</h3>
-    
-    
-  <p>
-    BBB Breakpoints used for responsive layouts.
+    has a title by default which is hidden on the user interface but visible for HTML5 outliner bots.
   </p>
 
   </article>
@@ -1060,8 +1060,23 @@
       <h3>Code snippets</h3>
       
       <ul>
-        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$breakpoint-small-screen</span><span class="p">:</span> <span class="m">64em</span><span class="p">;</span>
-<span class="nv">$breakpoint-large-screen</span><span class="p">:</span> <span class="m">90em</span><span class="p">;</span></code></pre></div></li>
+        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@mixin</span> <span class="nf">html5-outliner</span> <span class="p">{</span>
+  <span class="nt">section</span><span class="o">,</span> <span class="nt">article</span><span class="o">,</span> <span class="nt">aside</span><span class="o">,</span> <span class="nt">nav</span> <span class="p">{</span>
+    <span class="k">@include</span> <span class="nd">hide-title</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@mixin</span> <span class="nf">hide-title</span> <span class="p">{</span>
+  <span class="o">&gt;</span> <span class="nt">h3</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@mixin</span> <span class="nf">show-title</span> <span class="p">{</span>
+  <span class="o">&gt;</span> <span class="nt">h3</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></div></li>
         <li></li>
         <li></li>
       </ul>

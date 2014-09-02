@@ -1,0 +1,15 @@
+@mixin sg-entry {
+  @include show-title;
+        
+  h3 {
+    @include font(styleguide-title);
+  }
+
+  article {
+    @include sg-entry-article;
+  } 
+  
+  &#colors {
+    @include sg-entry-colors;
+  }
+}

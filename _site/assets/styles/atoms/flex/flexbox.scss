@@ -23,11 +23,11 @@
   } 
   
   @if ($direction) {
-    @include flexbox-direction($direction)
+    @include flexbox-direction($direction);
   }
   
   @if ($wrap) {
-    @include flexbox-wrap($wrap)
+    @include flexbox-wrap($wrap);
   }
  }
 

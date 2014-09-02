@@ -1,14 +1,22 @@
 require 'filewatcher'
 
+
+# Directories and files
 root = Dir.pwd
 destination = '_site/assets/styles'
-extension = '.liquid'
+extension = '*.liquid'
 
+
+
+# Checking for a specific file to watch
+extension = ARGV[0].to_s + '.liquid' if ARGV[0]
+
+
+# Do watch
 puts "Watching #{extension} files in #{destination}"
-
 compile = true
 
-FileWatcher.new(["#{destination}/*#{extension}", "#{destination}/**/*#{extension}"]).watch do |filename|
+FileWatcher.new(["#{destination}/*#{extension}", "#{destination}/**/#{extension}"]).watch do |filename|
   puts "Compile: " + compile.to_s
   
   if compile 

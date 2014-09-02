@@ -1,6 +1,7 @@
 ---
 layout: styleguide
 title: Colors
+order: a
 category: atoms
 scss: "colors.scss"
 items:
@@ -21,16 +22,21 @@ items:
 
 
 {% capture example %}
-  <div class="colors">
+  <section>
+    <h3>Color swatches</h3>
     {% for item in page.items %}
-      <div class="color">
-        <span class="rectangel"></span>
-        <span class="name">{{ item.name }}</span>
-        <span class="value">{{ item.value }}</span>
-        <span class="description">{{ item.description }}</span>
-      </div>
+      <article>
+        <h3>{{ item.name }}</h3>
+        <figure>&nbsp;</figure>
+        <aside>
+          <h3>Description</h3>
+          <p>{{ item.name }}</p>
+          <p>{{ item.value }}</p>
+          <p>{{ item.description }}</p>
+        </aside>
+      </article>
     {% endfor %}
-  </div>
+  </section>
 {% endcapture %}
 
 

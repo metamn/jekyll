@@ -1,0 +1,19 @@
+html.styleguide { 
+  &.archive {
+    body {
+      main {
+        .styleguide-entry {
+          h3 {
+            @include font(styleguide-item-title);
+          }
+          
+          article {
+            h3 {
+              @include font(styleguide-item-subtitle);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@mixin sg-entry-colors {
+  .example {
+    section {
+      @include flexbox($wrap: wrap);
+      
+      article {
+        @include hide-title;
+        @include flex-item;
+        @include flexbox;
+        
+        figure {
+          @include flex-item;
+          background: red;
+        }
+        
+        aside {
+          @include flex-item;
+          @include flexbox($direction: column);
+          
+          p {
+            @include flex-item;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+html.styleguide {
+  body {
+    @include styleguide-layout;
+    
+    header {
+      @include styleguide-header;
+    }
+    
+    main {
+      h1 {
+        @include font(styleguide-title);
+      }
+      
+      .styleguide-entry {
+        @include sg-entry; 
+      }
+    }
+  }
+}
+
+
+

@@ -5,10 +5,10 @@ $line-height: 1.25;
 $lem: 1.25em;
 
 
-
 @mixin responsive-typography {
   font-size: $font-size-laptop;
   line-height: $line-height;
+  $lem: $lem;
     
   @include portrait {
     font-size: $font-size-tablet;  

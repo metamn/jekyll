@@ -4,7 +4,8 @@
   </h3>
   
   <ul>
-    {% for entry in site.pages reversed %}
+    {% assign entries = site.pages | sort: 'order' %}
+    {% for entry in entries %}
       {% if entry.category == include.folder %}
         <li>{% include styleguide/sg-navigation-link.html title=entry.title folder=include.folder %}</li>
       {% endif %}
