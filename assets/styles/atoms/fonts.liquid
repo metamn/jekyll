@@ -17,7 +17,7 @@
 
 @mixin font($type: body) {
   {% for item in current.items %}{% for mixin in item.mixins %}
-    @if ($type == {% include atoms/classname.html title=mixin.name %}) {
+    @if ($type == {% include site/atoms/classname.html title=mixin.name %}) {
       font-family: "{{ item.name }}", {{ mixin.font-family }};
       {% for property in mixin.properties %}{{ property.name }}: {{ property.value }};
       {% endfor %}

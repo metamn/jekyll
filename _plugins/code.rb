@@ -15,7 +15,7 @@ module Jekyll
         when "scss"
           file = root + "/assets/styles/" + folder + "/" + filename
         when "html"
-          file = root + "/_includes/" + folder + "/" + filename
+          file = root + "/_includes/site/" + folder + "/" + filename
         when "js"
           file = root + "/assets/scripts/" + folder + "/" + filename
       end
