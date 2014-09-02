@@ -4,16 +4,37 @@ title: Fonts
 category: atoms
 scss: "fonts.scss"
 items:
-  - name: PT Serif
-    description: A subtle serif typeface for body text
-    value: PT+Serif
-    styles: 400
+  - name: Source Sans Pro
+    description: A subtle sans serif typeface for body text
+    value: Source+Sans+Pro
+    styles: "400,600"
     mixins:
-      - name: body
-        font-family: serif
+      - name: Body
+        font-family: sans-serif
         properties:
           - name: font-weight
             value: 400
+      - name: Styleguide title
+        font-family: sans-serif
+        properties:
+          - name: font-weight
+            value: 600
+          - name: font-size
+            value: $heading-level-2
+      - name: Styleguide item title
+        font-family: sans-serif
+        properties:
+          - name: font-weight
+            value: 600
+          - name: font-size
+            value: $heading-level-1
+      - name: Styleguide item subtitle
+        font-family: sans-serif
+        properties:
+          - name: font-weight
+            value: 600
+          - name: font-size
+            value: 100%
 ---
 
 

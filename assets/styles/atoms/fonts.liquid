@@ -6,7 +6,7 @@
     {% if page.title == "Fonts" %}
     {% assign current = page %}
       {% for item in page.items %}
-        {{ item.value }}:{{ item.styles | join: ',' }}
+        {{ item.value }}:{{ item.styles }}
       {% endfor %}
     {% endif %}
   {% endfor %}
@@ -14,10 +14,12 @@
 
 @import url(http://fonts.googleapis.com/css?family={{ webfonts | strip_newlines | replace: ' ', '' }});
 
+
 @mixin font($type: body) {
   {% for item in current.items %}{% for mixin in item.mixins %}
-    @if ($type == {{ mixin.name }}) {
+    @if ($type == {% include atoms/classname.html title=mixin.name %}) {
       font-family: "{{ item.name }}", {{ mixin.font-family }};
-      {% for property in mixin.properties %}{{ property.name }}: {{ property.value }};{% endfor %}
+      {% for property in mixin.properties %}{{ property.name }}: {{ property.value }};
+      {% endfor %}
     }{% endfor %}{% endfor %}
 }

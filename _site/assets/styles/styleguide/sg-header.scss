@@ -1,4 +1,8 @@
 @mixin styleguide-header {
+  h1 {
+    @include font(styleguide-title);
+  }
+  
   nav {
     @include flexbox($wrap: wrap);
     
@@ -7,6 +11,10 @@
       @include flex-item($flex-basis: 15em);
       @include show-title;
       margin-top: 1.25em;
+      
+      h3 {
+        @include font(styleguide-item-title);
+      }
     }
   }
 }

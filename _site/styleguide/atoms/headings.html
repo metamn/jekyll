@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="breakpoints styleguide ">
+<html lang="en" class="headings styleguide ">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="humans.txt" />
     
-    <title>Breakpoints &mdash; Site title</title> 
+    <title>Headings &mdash; Site title</title> 
     
     <!-- Compass with SASS -->
   	
@@ -387,15 +387,15 @@
 
 
 
-<section id="breakpoints" class="styleguide-entry">
-  <h3>Breakpoints</h3>
+<section id="headings" class="styleguide-entry">
+  <h3>Headings</h3>
   
   <article class="description">
     <h3>Description</h3>
     
     
   <p>
-    Breakpoints used for responsive layouts.
+    Heading levels based on Fibonacci numbers
   </p>
 
   </article>
@@ -431,8 +431,17 @@
       <h3>Code snippets</h3>
       
       <ul>
-        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$breakpoint-small-screen</span><span class="p">:</span> <span class="m">64em</span><span class="p">;</span>
-<span class="nv">$breakpoint-large-screen</span><span class="p">:</span> <span class="m">90em</span><span class="p">;</span></code></pre></div></li>
+        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Heading levels
+// - based on lamb.cc/typograph using Le Corbuisier ratios
+// - the even sizes are Fibonacci numbers, the odd size are an in between ratio
+</span><span class="nv">$heading-level-1</span><span class="p">:</span> <span class="m">1</span><span class="mi">.3077em</span><span class="p">;</span>
+<span class="nv">$heading-level-2</span><span class="p">:</span> <span class="m">1</span><span class="mi">.6154em</span><span class="p">;</span>
+<span class="nv">$heading-level-3</span><span class="p">:</span> <span class="m">2</span><span class="mi">.1154em</span><span class="p">;</span>
+<span class="nv">$heading-level-4</span><span class="p">:</span> <span class="m">2</span><span class="mi">.6154em</span><span class="p">;</span>
+<span class="nv">$heading-level-5</span><span class="p">:</span> <span class="m">3</span><span class="mi">.4231em</span><span class="p">;</span>
+<span class="nv">$heading-level-6</span><span class="p">:</span> <span class="m">4</span><span class="mi">.2308em</span><span class="p">;</span>
+<span class="nv">$heading-level-7</span><span class="p">:</span> <span class="m">5</span><span class="mi">.5385em</span><span class="p">;</span>
+<span class="nv">$heading-level-8</span><span class="p">:</span> <span class="m">6</span><span class="mi">.8462em</span><span class="p">;</span></code></pre></div></li>
         <li></li>
         <li></li>
       </ul>

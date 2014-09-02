@@ -7,16 +7,52 @@ html.styleguide {
     }
     
     main {
+      h1 {
+        @include font(styleguide-title);
+      }
+      
       .styleguide-entry {
         @include show-title;
         
+        h3 {
+          @include font(styleguide-title);
+        }
+        
         article {
+          @include show-title;
+          
+          h3 {
+            @include font(styleguide-item-subtitle);
+          }
+          
+          &.description {
+            @include hide-title;
+          }
+          
           &.code {
             nav ul li {
               @include sg-highlight;
             }
           }
         }  
+      }
+    }
+  }
+  
+  &.archive {
+    body {
+      main {
+        .styleguide-entry {
+          h3 {
+            @include font(styleguide-item-title);
+          }
+          
+          article {
+            h3 {
+              @include font(styleguide-item-subtitle);
+            }
+          }
+        }
       }
     }
   }

@@ -88,6 +88,12 @@
       
     
       
+        <li>
+  <a href="/styleguide/atoms/headings.html" title="Headings">Headings</a>
+</li>
+      
+    
+      
     
       
         <li>
@@ -137,6 +143,8 @@
   </h3>
   
   <ul>
+    
+      
     
       
     
@@ -237,6 +245,8 @@
     
       
     
+      
+    
   </ul>
 </article>
 
@@ -294,6 +304,8 @@
     
       
     
+      
+    
   </ul>
 </article>
 
@@ -308,6 +320,8 @@
   </h3>
   
   <ul>
+    
+      
     
       
     
@@ -417,13 +431,33 @@
       <h3>Code snippets</h3>
       
       <ul>
-        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="sx">url(http://fonts.googleapis.com/css?family=PT+Serif:400)</span><span class="p">;</span>
+        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="sx">url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600)</span><span class="p">;</span>
+
 
 <span class="k">@mixin</span> <span class="nf">font</span><span class="p">(</span><span class="nv">$type</span><span class="o">:</span> <span class="n">body</span><span class="p">)</span> <span class="p">{</span>
   
     <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">body</span><span class="p">)</span> <span class="p">{</span>
-      <span class="nl">font-family</span><span class="p">:</span> <span class="s2">"PT Serif"</span><span class="o">,</span> <span class="nb">serif</span><span class="p">;</span>
+      <span class="nl">font-family</span><span class="p">:</span> <span class="s2">"Source Sans Pro"</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
       <span class="nl">font-weight</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>
+      
+    <span class="p">}</span>
+    <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">styleguide-title</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nl">font-family</span><span class="p">:</span> <span class="s2">"Source Sans Pro"</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+      <span class="nl">font-weight</span><span class="p">:</span> <span class="m">600</span><span class="p">;</span>
+      <span class="nl">font-size</span><span class="p">:</span> <span class="nv">$heading-level-2</span><span class="p">;</span>
+      
+    <span class="p">}</span>
+    <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">styleguide-item-title</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nl">font-family</span><span class="p">:</span> <span class="s2">"Source Sans Pro"</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+      <span class="nl">font-weight</span><span class="p">:</span> <span class="m">600</span><span class="p">;</span>
+      <span class="nl">font-size</span><span class="p">:</span> <span class="nv">$heading-level-1</span><span class="p">;</span>
+      
+    <span class="p">}</span>
+    <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">styleguide-item-subtitle</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nl">font-family</span><span class="p">:</span> <span class="s2">"Source Sans Pro"</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+      <span class="nl">font-weight</span><span class="p">:</span> <span class="m">600</span><span class="p">;</span>
+      <span class="nl">font-size</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+      
     <span class="p">}</span>
 <span class="p">}</span></code></pre></div></li>
         <li></li>

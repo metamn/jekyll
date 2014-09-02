@@ -1,8 +1,8 @@
 /* Styleguide specific entries
 */
 /* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import url(http://fonts.googleapis.com/css?family=PT+Serif:400);
-@import url(http://fonts.googleapis.com/css?family=PT+Serif:400);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
 html { line-height: 1; }
@@ -23,7 +23,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* No files to import found in molecules/* */
 /* No files to import found in organisms/* */
 /* No files to import found in structures/* */
-html body { font-size: 100%; line-height: 1.25; font-family: "PT Serif", serif; font-weight: 400; display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ }
+html body { font-size: 100%; line-height: 1.25; font-family: "Source Sans Pro", sans-serif; font-weight: 400; display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ }
 @media only screen and (max-width: 64em) { html body { font-size: 100%; } }
 @media only screen and (min-width: 90em) { html body { font-size: 125%; } }
 html body section > h3, html body article > h3, html body aside > h3, html body nav > h3 { display: none; }
@@ -33,10 +33,17 @@ html.styleguide body header { -webkit-flex-basis: 15em; -moz-flex-basis: 15em; -
 html.styleguide body main { -webkit-box-flex: 2; -webkit-flex-grow: 2; -moz-flex-grow: 2; -ms-flex-positive: 2; flex-grow: 2; }
 @media only screen and (max-width: 64em) { html.styleguide body { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
   html.styleguide body header { -webkit-flex-basis: 100%; -moz-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; } }
+html.styleguide body header h1 { font-family: "Source Sans Pro", sans-serif; font-weight: 600; font-size: 1.6154em; }
 html.styleguide body header nav { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 html.styleguide body header nav article { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: 15em; -moz-flex-basis: 15em; -ms-flex-preferred-size: 15em; flex-basis: 15em; -webkit-box-pack: auto; -ms-flex-pack: auto; -webkit-justify-content: auto; -moz-justify-content: auto; justify-content: auto; margin-top: 1.25em; }
 html.styleguide body header nav article > h3 { display: block; }
+html.styleguide body header nav article h3 { font-family: "Source Sans Pro", sans-serif; font-weight: 600; font-size: 1.3077em; }
+html.styleguide body main h1 { font-family: "Source Sans Pro", sans-serif; font-weight: 600; font-size: 1.6154em; }
 html.styleguide body main .styleguide-entry > h3 { display: block; }
+html.styleguide body main .styleguide-entry h3 { font-family: "Source Sans Pro", sans-serif; font-weight: 600; font-size: 1.6154em; }
+html.styleguide body main .styleguide-entry article > h3 { display: block; }
+html.styleguide body main .styleguide-entry article h3 { font-family: "Source Sans Pro", sans-serif; font-weight: 600; font-size: 100%; }
+html.styleguide body main .styleguide-entry article.description > h3 { display: none; }
 html.styleguide body main .styleguide-entry article.code nav ul li .highlight table td { padding: 5px; }
 html.styleguide body main .styleguide-entry article.code nav ul li .highlight table pre { margin: 0; }
 html.styleguide body main .styleguide-entry article.code nav ul li .highlight .gh { color: #999999; }
@@ -101,3 +108,5 @@ html.styleguide body main .styleguide-entry article.code nav ul li .highlight .k
 html.styleguide body main .styleguide-entry article.code nav ul li .highlight .kp { color: #f92672; }
 html.styleguide body main .styleguide-entry article.code nav ul li .highlight .o { color: #f92672; }
 html.styleguide body main .styleguide-entry article.code nav ul li .highlight { background: black; color: white; font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: smaller; }
+html.styleguide.archive body main .styleguide-entry h3 { font-family: "Source Sans Pro", sans-serif; font-weight: 600; font-size: 1.3077em; }
+html.styleguide.archive body main .styleguide-entry article h3 { font-family: "Source Sans Pro", sans-serif; font-weight: 600; font-size: 100%; }

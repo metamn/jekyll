@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="atoms styleguide ">
+<html lang="en" class="atoms styleguide archive">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -88,6 +88,12 @@
       
     
       
+        <li>
+  <a href="/styleguide/atoms/headings.html" title="Headings">Headings</a>
+</li>
+      
+    
+      
     
       
         <li>
@@ -137,6 +143,8 @@
   </h3>
   
   <ul>
+    
+      
     
       
     
@@ -237,6 +245,8 @@
     
       
     
+      
+    
   </ul>
 </article>
 
@@ -294,6 +304,8 @@
     
       
     
+      
+    
   </ul>
 </article>
 
@@ -308,6 +320,8 @@
   </h3>
   
   <ul>
+    
+      
     
       
     
@@ -544,6 +558,83 @@
   
 
   
+    
+
+
+
+
+
+
+
+
+
+
+
+<section id="headings" class="styleguide-entry">
+  <h3>Headings</h3>
+  
+  <article class="description">
+    <h3>Description</h3>
+    
+    
+  <p>
+    Heading levels based on Fibonacci numbers
+  </p>
+
+  </article>
+  
+  
+  <article class="example">
+    <h3>Example</h3>
+    
+    
+  
+
+  </article>
+  
+  
+  <article class="technical">
+    <h3>Technical description</h3>
+    
+    
+  <p>
+    Since Compass has no support yet for Flexbox there is a set of mixins created using 
+    <a href="https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss" title="SCSS Flexbox Mixins">SCSS Flexbox Mixins</a>
+  </p>
+  <ul>
+    
+  </ul>
+
+  </article>
+  
+  <article class="code">
+    <h3>Source code</h3>
+    
+    <nav>
+      <h3>Code snippets</h3>
+      
+      <ul>
+        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Heading levels
+// - based on lamb.cc/typograph using Le Corbuisier ratios
+// - the even sizes are Fibonacci numbers, the odd size are an in between ratio
+</span><span class="nv">$heading-level-1</span><span class="p">:</span> <span class="m">1</span><span class="mi">.3077em</span><span class="p">;</span>
+<span class="nv">$heading-level-2</span><span class="p">:</span> <span class="m">1</span><span class="mi">.6154em</span><span class="p">;</span>
+<span class="nv">$heading-level-3</span><span class="p">:</span> <span class="m">2</span><span class="mi">.1154em</span><span class="p">;</span>
+<span class="nv">$heading-level-4</span><span class="p">:</span> <span class="m">2</span><span class="mi">.6154em</span><span class="p">;</span>
+<span class="nv">$heading-level-5</span><span class="p">:</span> <span class="m">3</span><span class="mi">.4231em</span><span class="p">;</span>
+<span class="nv">$heading-level-6</span><span class="p">:</span> <span class="m">4</span><span class="mi">.2308em</span><span class="p">;</span>
+<span class="nv">$heading-level-7</span><span class="p">:</span> <span class="m">5</span><span class="mi">.5385em</span><span class="p">;</span>
+<span class="nv">$heading-level-8</span><span class="p">:</span> <span class="m">6</span><span class="mi">.8462em</span><span class="p">;</span></code></pre></div></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+  </article>
+</section>
+
+  
+
+  
 
   
     
@@ -602,13 +693,33 @@
       <h3>Code snippets</h3>
       
       <ul>
-        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="sx">url(http://fonts.googleapis.com/css?family=PT+Serif:400)</span><span class="p">;</span>
+        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="sx">url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600)</span><span class="p">;</span>
+
 
 <span class="k">@mixin</span> <span class="nf">font</span><span class="p">(</span><span class="nv">$type</span><span class="o">:</span> <span class="n">body</span><span class="p">)</span> <span class="p">{</span>
   
     <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">body</span><span class="p">)</span> <span class="p">{</span>
-      <span class="nl">font-family</span><span class="p">:</span> <span class="s2">"PT Serif"</span><span class="o">,</span> <span class="nb">serif</span><span class="p">;</span>
+      <span class="nl">font-family</span><span class="p">:</span> <span class="s2">"Source Sans Pro"</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
       <span class="nl">font-weight</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>
+      
+    <span class="p">}</span>
+    <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">styleguide-title</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nl">font-family</span><span class="p">:</span> <span class="s2">"Source Sans Pro"</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+      <span class="nl">font-weight</span><span class="p">:</span> <span class="m">600</span><span class="p">;</span>
+      <span class="nl">font-size</span><span class="p">:</span> <span class="nv">$heading-level-2</span><span class="p">;</span>
+      
+    <span class="p">}</span>
+    <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">styleguide-item-title</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nl">font-family</span><span class="p">:</span> <span class="s2">"Source Sans Pro"</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+      <span class="nl">font-weight</span><span class="p">:</span> <span class="m">600</span><span class="p">;</span>
+      <span class="nl">font-size</span><span class="p">:</span> <span class="nv">$heading-level-1</span><span class="p">;</span>
+      
+    <span class="p">}</span>
+    <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">styleguide-item-subtitle</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nl">font-family</span><span class="p">:</span> <span class="s2">"Source Sans Pro"</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+      <span class="nl">font-weight</span><span class="p">:</span> <span class="m">600</span><span class="p">;</span>
+      <span class="nl">font-size</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+      
     <span class="p">}</span>
 <span class="p">}</span></code></pre></div></li>
         <li></li>
