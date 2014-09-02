@@ -7,10 +7,12 @@
         @include hide-title;
         @include flex-item;
         @include flexbox;
+        padding-right: $lem;
         
         figure {
           @include flex-item;
           background: red;
+          width: $lem * 5;
         }
         
         aside {
@@ -19,6 +21,11 @@
           
           p {
             @include flex-item;
+            padding: 0 $lem $lem;
+            
+            &:last-of-type {
+              padding-bottom: 0;
+            }
           }
         }
       }

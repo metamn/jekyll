@@ -6,7 +6,7 @@
   
   // This makes a one column sidebar on landscape
   header {
-    @include flex-basis(15em);
+    @include flex-basis($lem * 10);
   }
   
   main {
