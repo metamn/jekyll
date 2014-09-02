@@ -1,6 +1,7 @@
 html {
   body {
     @include responsive-typography;
+    @include font;
     @include html5-outliner;
     @include flexbox;
   }

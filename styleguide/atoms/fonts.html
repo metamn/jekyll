@@ -1,0 +1,48 @@
+---
+layout: styleguide
+title: Fonts
+category: atoms
+scss: "fonts.scss"
+items:
+  - name: PT Serif
+    description: A subtle serif typeface for body text
+    value: PT+Serif
+    styles: 400
+    mixins:
+      - name: body
+        font-family: serif
+        properties:
+          - name: font-weight
+            value: 400
+---
+
+
+{% capture description %}
+  <p>
+    A flexible, responsive container.
+  </p>
+{% endcapture %}
+
+
+{% capture example %}
+  
+{% endcapture %}
+
+
+
+{% capture technical %}
+  <p>
+    Since Compass has no support yet for Flexbox there is a set of mixins created using 
+    <a href="https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss" title="SCSS Flexbox Mixins">SCSS Flexbox Mixins</a>
+  </p>
+  <ul>
+    {% for related in page.related %}
+      <li>{{ related.name }}</li>
+    {% endfor %}
+  </ul>
+{% endcapture %}
+
+
+
+
+{% include styleguide/sg-styleguide-entry.html description=description example=example technical=technical %}

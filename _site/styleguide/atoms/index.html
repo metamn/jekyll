@@ -88,6 +88,14 @@
       
     
       
+    
+      
+        <li>
+  <a href="/styleguide/atoms/fonts.html" title="Fonts">Fonts</a>
+</li>
+      
+    
+      
         <li>
   <a href="/styleguide/atoms/flexbox.html" title="Flexbox">Flexbox</a>
 </li>
@@ -129,6 +137,10 @@
   </h3>
   
   <ul>
+    
+      
+    
+      
     
       
     
@@ -221,6 +233,10 @@
     
       
     
+      
+    
+      
+    
   </ul>
 </article>
 
@@ -274,6 +290,10 @@
     
       
     
+      
+    
+      
+    
   </ul>
 </article>
 
@@ -288,6 +308,10 @@
   </h3>
   
   <ul>
+    
+      
+    
+      
     
       
     
@@ -509,6 +533,83 @@
   <span class="o">&gt;</span> <span class="nt">h3</span> <span class="p">{</span>
     <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
   <span class="p">}</span>
+<span class="p">}</span></code></pre></div></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+  </article>
+</section>
+
+  
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+<section id="fonts" class="styleguide-entry">
+  <h3>Fonts</h3>
+  
+  <article class="description">
+    <h3>Description</h3>
+    
+    
+  <p>
+    A flexible, responsive container.
+  </p>
+
+  </article>
+  
+  
+  <article class="example">
+    <h3>Example</h3>
+    
+    
+  
+
+  </article>
+  
+  
+  <article class="technical">
+    <h3>Technical description</h3>
+    
+    
+  <p>
+    Since Compass has no support yet for Flexbox there is a set of mixins created using 
+    <a href="https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss" title="SCSS Flexbox Mixins">SCSS Flexbox Mixins</a>
+  </p>
+  <ul>
+    
+  </ul>
+
+  </article>
+  
+  <article class="code">
+    <h3>Source code</h3>
+    
+    <nav>
+      <h3>Code snippets</h3>
+      
+      <ul>
+        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="sx">url(http://fonts.googleapis.com/css?family=PT+Serif:400)</span><span class="p">;</span>
+
+<span class="k">@mixin</span> <span class="nf">font</span><span class="p">(</span><span class="nv">$type</span><span class="o">:</span> <span class="n">body</span><span class="p">)</span> <span class="p">{</span>
+  
+    <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">body</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nl">font-family</span><span class="p">:</span> <span class="s2">"PT Serif"</span><span class="o">,</span> <span class="nb">serif</span><span class="p">;</span>
+      <span class="nl">font-weight</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>
+    <span class="p">}</span>
 <span class="p">}</span></code></pre></div></li>
         <li></li>
         <li></li>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="structures styleguide ">
+<html lang="en" class="fonts styleguide ">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="humans.txt" />
     
-    <title>Structures &mdash; Site title</title> 
+    <title>Fonts &mdash; Site title</title> 
     
     <!-- Compass with SASS -->
   	
@@ -361,50 +361,77 @@
 </header>
 
 <main>
-  <h1>Structures</h1>
-
-
   
 
+
+
+
+
+
+
+
+
+
+
+<section id="fonts" class="styleguide-entry">
+  <h3>Fonts</h3>
+  
+  <article class="description">
+    <h3>Description</h3>
+    
+    
+  <p>
+    A flexible, responsive container.
+  </p>
+
+  </article>
+  
+  
+  <article class="example">
+    <h3>Example</h3>
+    
+    
   
 
+  </article>
   
+  
+  <article class="technical">
+    <h3>Technical description</h3>
+    
+    
+  <p>
+    Since Compass has no support yet for Flexbox there is a set of mixins created using 
+    <a href="https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss" title="SCSS Flexbox Mixins">SCSS Flexbox Mixins</a>
+  </p>
+  <ul>
+    
+  </ul>
 
+  </article>
   
+  <article class="code">
+    <h3>Source code</h3>
+    
+    <nav>
+      <h3>Code snippets</h3>
+      
+      <ul>
+        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="sx">url(http://fonts.googleapis.com/css?family=PT+Serif:400)</span><span class="p">;</span>
 
+<span class="k">@mixin</span> <span class="nf">font</span><span class="p">(</span><span class="nv">$type</span><span class="o">:</span> <span class="n">body</span><span class="p">)</span> <span class="p">{</span>
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
+    <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">body</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nl">font-family</span><span class="p">:</span> <span class="s2">"PT Serif"</span><span class="o">,</span> <span class="nb">serif</span><span class="p">;</span>
+      <span class="nl">font-weight</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+  </article>
+</section>
 
 </main>
 
