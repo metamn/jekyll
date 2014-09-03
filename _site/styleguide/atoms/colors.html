@@ -398,28 +398,6 @@
     <section>
   <h3>Color swatches</h3>
   
-    <article>
-      <h3>white</h3>
-      <figure>&nbsp;</figure>
-      <aside>
-        <h3>Description</h3>
-        <p>$white</p>
-        <p>hsla(0, 0, 100%, 1)</p>
-        <p>background color</p>
-      </aside>
-    </article>
-  
-    <article>
-      <h3>black</h3>
-      <figure>&nbsp;</figure>
-      <aside>
-        <h3>Description</h3>
-        <p>$black</p>
-        <p>hsla(170, 45%, 5%, 1)</p>
-        <p>text color</p>
-      </aside>
-    </article>
-  
 </section>
   </article>
   
@@ -505,29 +483,29 @@
     <h3>Code snippets</h3>
 
     <ul>
-      <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$white</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">100%</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span>
+      <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// All color codes
+</span><span class="nv">$white</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">100%</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span>
 <span class="nv">$black</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">170</span><span class="o">,</span> <span class="m">45%</span><span class="o">,</span> <span class="m">5%</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span>
 
-<span class="nv">$colors</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">100%</span><span class="o">,</span> <span class="m">1</span><span class="p">)</span><span class="o">,</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">170</span><span class="o">,</span> <span class="m">45%</span><span class="o">,</span> <span class="m">5%</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span>
+
+<span class="c1">// All color codes collected in a list
+</span><span class="nv">$colors</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">100%</span><span class="o">,</span> <span class="m">1</span><span class="p">)</span><span class="o">,</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">170</span><span class="o">,</span> <span class="m">45%</span><span class="o">,</span> <span class="m">5%</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span>
 
 
-<span class="k">@mixin</span> <span class="nf">colors</span><span class="p">(</span><span class="nv">$scheme</span><span class="o">:</span> <span class="n">black-on-white</span><span class="p">)</span> <span class="p">{</span>
-  
-    <span class="k">@if</span> <span class="p">(</span><span class="nv">$scheme</span> <span class="o">==</span> <span class="n">black-on-white</span><span class="p">)</span> <span class="p">{</span>
+<span class="c1">// All color pairs
+</span><span class="k">@mixin</span> <span class="nf">colors</span><span class="p">(</span><span class="nv">$scheme</span><span class="o">:</span> <span class="n">black-on-white</span><span class="p">)</span> <span class="p">{</span>
+   <span class="k">@if</span> <span class="p">(</span><span class="nv">$scheme</span> <span class="o">==</span> <span class="n">black-on-white</span><span class="p">)</span> <span class="p">{</span>
       <span class="nl">color</span><span class="p">:</span> <span class="nv">$black</span><span class="p">;</span>
       <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$white</span><span class="p">;</span>
-    <span class="p">}</span>
-  
-    <span class="k">@if</span> <span class="p">(</span><span class="nv">$scheme</span> <span class="o">==</span> <span class="n">white-on-black</span><span class="p">)</span> <span class="p">{</span>
+  <span class="p">}</span> <span class="k">@if</span> <span class="p">(</span><span class="nv">$scheme</span> <span class="o">==</span> <span class="n">white-on-black</span><span class="p">)</span> <span class="p">{</span>
       <span class="nl">color</span><span class="p">:</span> <span class="nv">$white</span><span class="p">;</span>
       <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$black</span><span class="p">;</span>
-    <span class="p">}</span>
-  
+  <span class="p">}</span>
 <span class="p">}</span>
 
 
-
-<span class="nv">$color-pairs</span><span class="p">:</span> <span class="n">black-on-white</span><span class="o">,</span> <span class="n">white-on-black</span><span class="p">;</span></code></pre></div></li>
+<span class="c1">// All color pairs collected in a list
+</span><span class="nv">$color-pairs</span><span class="p">:</span> <span class="n">black-on-white</span><span class="o">,</span> <span class="n">white-on-black</span><span class="p">;</span></code></pre></div></li>
       <li></li>
       <li></li>
     </ul>

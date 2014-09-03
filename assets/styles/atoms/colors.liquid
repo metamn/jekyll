@@ -1,20 +1,22 @@
 ---
 ---
+{% for page in site.pages %}{% if page.title == "Colors" %}{% assign current = page %}{% endif %}{% endfor %}
+// {{ current.colors-description }}
+{% for color in current.colors %}${{ color.name }}: {{ color.value }};
+{% endfor %}{% capture colors %}{% for color in current.colors %}{{ color.value }},{% endfor %}{% endcapture %}{% capture colors %}{% include styleguide/atoms/sg-clean-spaces.html text=colors %}{% endcapture %}{% assign colors = colors | split: ',' %}
 
-{% for page in site.pages %}{% if page.title == "Colors" %}{% for color in page.items %}${{ color.name }}: {{ color.value }};
-{% endfor %}{% endif %}{% endfor %}{% capture colors %}{% for page in site.pages %}{% if page.title == "Colors" %}{% for color in page.items %}{{ color.value }},{% endfor %}{% endif %}{% endfor %}{% endcapture %}{% capture colors %}{% include styleguide/atoms/sg-clean-spaces.html text=colors %}{% endcapture %}{% assign colors = colors | split: ',' %}
+// {{ current.color-list-description }}
 $colors: {{ colors | join: ', ' }};
 
 
+// {{ current.color-pairs-description }}
 @mixin colors($scheme: black-on-white) {
-  {% for page in site.pages %}{% if page.title == "Colors" %}{% for pair in page.pairs %}
-    @if ($scheme == {% include site/atoms/classname.html title=pair.name %}) {
+  {% for pair in current.pairs %} @if ($scheme == {% include site/atoms/classname.html title=pair.name %}) {
       color: ${{ pair.foreground }};
       background-color: ${{ pair.background }};
-    }
-  {% endfor %}{% endif %}{% endfor %}
+  }{% endfor %}
 }
 
-
-{% capture pairs %}{% for page in site.pages %}{% if page.title == "Colors" %}{% for pair in page.pairs %}{% include site/atoms/classname.html title=pair.name %},{% endfor %}{% endif %}{% endfor %}{% endcapture %}{% assign pairs = pairs | split: ',' %}
+{% capture pairs %}{% for pair in current.pairs %}{% include site/atoms/classname.html title=pair.name %},{% endfor %}{% endcapture %}{% assign pairs = pairs | split: ',' %}
+// {{ current.color-pairs-list-description }}
 $color-pairs: {{ pairs | join: ', ' }};
