@@ -1,0 +1,36 @@
+{% for page in site.pages %}
+  {% if page.title == "Colors" %}
+    {% assign colors = page %}
+  {% endif %}
+{% endfor %}
+
+<section>
+  <h3>Fonts and colors mixins</h3>
+  {% for font in page.fonts %}
+    {% for mixin in font.mixins %}
+      {% for pair in colors.pairs %}
+        <article>
+          <h3>{{ mixin.name }}</h3>
+          
+          <figure>
+            {% if mixin.name == "Body" %}
+              <figcaption>
+                This is a body text
+              </figcaption>
+            {% else %}
+              <figcaption>
+                {{ mixin.name }}
+              </figcaption>
+            {% endif %}
+          </figure>
+          
+          <aside>
+            <h3>Description</h3>
+            <p>font: {{ mixin.name }}</p>
+            <p>color: {{ pair.name }}</p>
+          </aside>
+        </article>
+      {% endfor %}
+    {% endfor %}
+  {% endfor %}
+</section>

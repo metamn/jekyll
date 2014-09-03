@@ -36,4 +36,8 @@
   &.font-mixins {
     @include sg-font-mixins;
   }
+  
+  &.fonts-and-colors {
+    @include sg-fonts-and-colors;
+  }
 }
