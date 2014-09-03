@@ -38,33 +38,24 @@ items:
             value: 100%
 ---
 
-
-{% capture description %}
-  <p>
-    A flexible, responsive container.
-  </p>
-{% endcapture %}
-
-
-{% capture example %}
+<section id="{% include site/atoms/classname.html title=page.title %}" class="styleguide-entry">
+  <h3>{{ page.title }}</h3>
   
-{% endcapture %}
-
-
-
-{% capture technical %}
-  <p>
-    Since Compass has no support yet for Flexbox there is a set of mixins created using 
-    <a href="https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss" title="SCSS Flexbox Mixins">SCSS Flexbox Mixins</a>
-  </p>
-  <ul>
-    {% for related in page.related %}
-      <li>{{ related.name }}</li>
-    {% endfor %}
-  </ul>
-{% endcapture %}
-
-
-
-
-{% include styleguide/sg-styleguide-entry.html description=description example=example technical=technical %}
+  <article class="description">
+    <h3>Description</h3>
+    
+    <p>
+      All fonts used by the site.
+    </p>
+  </article>
+  
+  
+  <article class="example font-families">
+    <h3>Example for font families</h3>
+    
+    {% include styleguide/molecules/sg-font-families.html %}
+  </article>
+  
+  
+  {% include styleguide/molecules/sg-code.html %}
+</section>

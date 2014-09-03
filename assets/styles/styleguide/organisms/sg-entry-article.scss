@@ -28,4 +28,8 @@
     @include sg-color-swatches;
     @include sg-color-pairs;
   }
+  
+  &.font-families {
+    @include sg-font-families;
+  }
 }
