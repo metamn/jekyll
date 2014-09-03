@@ -1,5 +1,5 @@
-{% for font in page.items %}
-  <aside id="{% include site/atoms/classname.html title=font-name %}">
+{% for font in page.fonts %}
+  <aside id="{% include site/atoms/classname.html title=font.name %}">
     <h3>{{ font.name }}</h3>
     
     <div class="description">

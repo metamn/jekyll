@@ -1,5 +1,11 @@
 @mixin sg-font-families {
   aside {
     @include show-title;
+    
+    @for $i from 1 through length($font-families) {
+      &:nth-of-type(#{$i}) {
+        font-family: nth($font-families, $i);
+      }
+    }
   }
 }
