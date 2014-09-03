@@ -1,4 +1,7 @@
 ---
 ---
+
 {% for page in site.pages %}{% if page.title == "Colors" %}{% for color in page.items %}${{ color.name }}: {{ color.value }};
-{% endfor %}{% endif %}{% endfor %}
+{% endfor %}{% endif %}{% endfor %}{% capture colors %}{% for page in site.pages %}{% if page.title == "Colors" %}{% for color in page.items %}{{ color.value }},{% endfor %}{% endif %}{% endfor %}{% endcapture %}{% capture colors %}{% include styleguide/atoms/clean-spaces.html text=colors %}{% endcapture %}{% assign colors = colors | split: ',' %}
+
+$colors: {{ colors | join: ', ' }};
