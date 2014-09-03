@@ -8,6 +8,15 @@
           }
         }
       }
+    
+      // center figcaption
+      figure {
+        @include flexbox($justify-content: center, $align-items: center);
+        
+        figcaption {
+          @include flex-item;
+        }
+      }
     }
   }
 }

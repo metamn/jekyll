@@ -7,7 +7,7 @@
 //    - false: the container will take the whole available space indifferenr of its content
 // - $direction: row (left-to-right)
 // - $wrap: nowrap (single line)
-@mixin flexbox($inline: false, $direction: null, $wrap: null) {
+@mixin flexbox($inline: false, $direction: null, $wrap: null, $justify-content: null, $align-items: null) {
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -28,6 +28,14 @@
   
   @if ($wrap) {
     @include flexbox-wrap($wrap);
+  }
+  
+  @if ($justify-content) {
+    @include flexbox-justify-content($justify-content);
+  }
+  
+  @if ($align-items) {
+    @include flexbox-align-items($align-items);
   }
  }
 
