@@ -4,6 +4,11 @@ title: Fonts
 order: b
 category: atoms
 scss: "fonts.scss"
+comments:
+  - Served from Google Fonts
+  - A list of all font families
+  - Special font mixins
+  - A list of all font mixins
 fonts:
   - name: Source Sans Pro
     description: A subtle sans serif typeface for body text
@@ -58,6 +63,25 @@ fonts:
     <h3>Example for font families</h3>
     
     {% include styleguide/molecules/sg-font-families.html %}
+  </article>
+  
+  
+  <article class="technical">
+    <h3>Usage</h3>
+    
+    <p>
+      A font family is rarely used raw, as is. It is adapted to the site's needs. For example headlines are converted to uppercase with larger letter spacing; navigation text is made smaller or heavier.
+    </p>
+    
+    <p>
+      To maintain typographic consistency accross the site these transformations are recorded and reused all the time. 
+    </p>
+  </article>
+  
+  <article class="example font-mixins">
+    <h3>Example for font mixins</h3>
+    
+    {% include styleguide/molecules/sg-font-mixins.html %}
   </article>
   
   

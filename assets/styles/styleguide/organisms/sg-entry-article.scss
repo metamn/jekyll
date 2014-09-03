@@ -32,4 +32,8 @@
   &.font-families {
     @include sg-font-families;
   }
+  
+  &.font-mixins {
+    @include sg-font-mixins;
+  }
 }

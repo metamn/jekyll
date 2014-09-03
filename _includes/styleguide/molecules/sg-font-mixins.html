@@ -1,0 +1,33 @@
+
+<section>
+  <h3>Font mixins</h3>
+  {% for font in page.fonts %}
+    {% for mixin in font.mixins %}
+      <article>
+        <h3>{{ mixin.name }}</h3>
+        <figure>
+          {% if mixin.name == "Body" %}
+            <figcaption>
+              This is a body text
+            </figcaption>
+          {% else %}
+            <figcaption>
+              {{ mixin.name }}
+            </figcaption>
+          {% endif %}
+        </figure>
+        <aside>
+          <h3>Description</h3>
+          <p>${% include site/atoms/classname.html title=mixin.name %}</p>
+          {% capture properties %}
+            {% for property in mixin.properties %}
+              {{ property.name }}: {{ property.value }},
+            {% endfor %}
+          {% endcapture %}
+          {% assign properties = properties | split: ',' %}
+          <p>set in {{ properties | join: ', ' }}</p>
+        </aside>
+      </article>
+    {% endfor %}
+  {% endfor %}
+</section>
