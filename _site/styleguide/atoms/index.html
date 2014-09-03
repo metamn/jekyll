@@ -411,93 +411,159 @@
   
 
   
-    
-
-
-
-
-
-
-
-
-
-
-
-<section id="colors" class="styleguide-entry">
+    <section id="colors" class="styleguide-entry">
   <h3>Colors</h3>
   
   <article class="description">
     <h3>Description</h3>
     
-    
-  <p>
-    All the colors used by the site.
-  </p>
-
+    <p>
+      All the colors used by the site.
+    </p>
   </article>
   
   
-  <article class="example">
-    <h3>Example</h3>
+  <article class="example color-swatches">
+    <h3>Example for color swatches</h3>
     
-    
-  <section>
-    <h3>Color swatches</h3>
-    
-      <article>
-        <h3>white</h3>
-        <figure>&nbsp;</figure>
-        <aside>
-          <h3>Description</h3>
-          <p>white</p>
-          <p>white</p>
-          <p>background color</p>
-        </aside>
-      </article>
-    
-      <article>
-        <h3>black</h3>
-        <figure>&nbsp;</figure>
-        <aside>
-          <h3>Description</h3>
-          <p>black</p>
-          <p>hsla(170, 45%, 5%, 1)</p>
-          <p>text color</p>
-        </aside>
-      </article>
-    
-  </section>
-
+    <section>
+  <h3>Color swatches</h3>
+  
+    <article>
+      <h3>white</h3>
+      <figure>&nbsp;</figure>
+      <aside>
+        <h3>Description</h3>
+        <p>$white</p>
+        <p>hsla(0, 0, 100%, 1)</p>
+        <p>background color</p>
+      </aside>
+    </article>
+  
+    <article>
+      <h3>black</h3>
+      <figure>&nbsp;</figure>
+      <aside>
+        <h3>Description</h3>
+        <p>$black</p>
+        <p>hsla(170, 45%, 5%, 1)</p>
+        <p>text color</p>
+      </aside>
+    </article>
+  
+</section>
   </article>
   
   
   <article class="technical">
-    <h3>Technical description</h3>
+    <h3>Usage</h3>
     
+    <p>
+      Colors do not exists alone. They are forming color pairs: a foreground color on a background color.
+    </p>
     
-  <p>
-    This is a short technical description
-  </p>
+    <p>
+      Colors pairs have contrast. Better the contrast better the readability and perception. 
+    </p>
+    
+    <p>
+      Web standards suggest high enough color contrast ratios to make websites readable for people with color vision deficiency.  
+    </p>
+  </article>
+  
+  
+  <article class="technical">
+    <h3>Color pairs</h3>
+    
+    <p>
+      This site uses color pairs accessible for everybody. 
+      With a 
+  
+  
 
+  
+    
+  
+
+
+
+
+  <a href="http://leaverou.github.io/contrast-ratio/" title="contrast ratio checker">contrast ratio checker</a>
+
+
+ we make sure all pairings pass the AAA or AA levels for any text.
+    </p>
+  </article>
+  
+  
+  <article class="example color-pairs">
+    <h3>Example for color pairs</h3>
+    
+    <section>
+  <h3>Color pairs</h3>
+  
+    <article>
+      <h3>Black on white</h3>
+      <figure>
+        <figcaption>black</figcaption>
+      </figure>
+      <aside>
+        <h3>Description</h3>
+        <p>$black-on-white</p>
+        <p>Contrast level: AAA</p>
+      </aside>
+    </article>
+  
+    <article>
+      <h3>White on black</h3>
+      <figure>
+        <figcaption>white</figcaption>
+      </figure>
+      <aside>
+        <h3>Description</h3>
+        <p>$white-on-black</p>
+        <p>Contrast level: AAA</p>
+      </aside>
+    </article>
+  
+</section>
   </article>
   
   <article class="code">
-    <h3>Source code</h3>
-    
-    <nav>
-      <h3>Code snippets</h3>
-      
-      <ul>
-        <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$white</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <h3>Source code</h3>
+
+  <nav>
+    <h3>Code snippets</h3>
+
+    <ul>
+      <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$white</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">100%</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span>
 <span class="nv">$black</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">170</span><span class="o">,</span> <span class="m">45%</span><span class="o">,</span> <span class="m">5%</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span>
 
+<span class="nv">$colors</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">100%</span><span class="o">,</span> <span class="m">1</span><span class="p">)</span><span class="o">,</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">170</span><span class="o">,</span> <span class="m">45%</span><span class="o">,</span> <span class="m">5%</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span>
 
-<span class="nv">$colors</span><span class="p">:</span> <span class="no">white</span><span class="o">,</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">170</span><span class="o">,</span> <span class="m">45%</span><span class="o">,</span> <span class="m">5%</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span></code></pre></div></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </nav>
-  </article>
+
+<span class="k">@mixin</span> <span class="nf">colors</span><span class="p">(</span><span class="nv">$scheme</span><span class="o">:</span> <span class="n">black-on-white</span><span class="p">)</span> <span class="p">{</span>
+  
+    <span class="k">@if</span> <span class="p">(</span><span class="nv">$scheme</span> <span class="o">==</span> <span class="n">black-on-white</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="nv">$black</span><span class="p">;</span>
+      <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$white</span><span class="p">;</span>
+    <span class="p">}</span>
+  
+    <span class="k">@if</span> <span class="p">(</span><span class="nv">$scheme</span> <span class="o">==</span> <span class="n">white-on-black</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="nv">$white</span><span class="p">;</span>
+      <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$black</span><span class="p">;</span>
+    <span class="p">}</span>
+  
+<span class="p">}</span>
+
+
+
+<span class="nv">$color-pairs</span><span class="p">:</span> <span class="n">black-on-white</span><span class="o">,</span> <span class="n">white-on-black</span><span class="p">;</span></code></pre></div></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </nav>
+</article>
 </section>
 
   

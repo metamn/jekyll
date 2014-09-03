@@ -1,0 +1,44 @@
+@mixin sg-color-swatches {
+  section {
+    @include flexbox($wrap: wrap);
+
+    article {
+      @include hide-title;
+      @include flex-item;
+      @include flexbox;
+      padding-right: $lem;
+
+      figure {
+        @include flex-item;
+        min-width: $lem * 5; // simple 'width' doesn't works on mobiles
+
+        // the $background color on $background has to have a border
+        &:nth-of-type(1) {
+          border: 1px solid;
+        }
+      }
+
+      @for $i from 1 through length($colors) {
+        &:nth-of-type(#{$i}) {
+          figure {
+            background-color: nth($colors, $i); 
+          }
+        }
+      }
+
+      aside {
+        @include flex-item;
+        @include flexbox($direction: column);
+
+        p {
+          @include flex-item;
+          padding: 0 $lem $lem;
+
+          &:last-of-type {
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

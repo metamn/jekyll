@@ -1,0 +1,15 @@
+<section>
+  <h3>Color swatches</h3>
+  {% for item in page.items %}
+    <article>
+      <h3>{{ item.name }}</h3>
+      <figure>&nbsp;</figure>
+      <aside>
+        <h3>Description</h3>
+        <p>${{ item.name }}</p>
+        <p>{{ item.value }}</p>
+        <p>{{ item.description }}</p>
+      </aside>
+    </article>
+  {% endfor %}
+</section>

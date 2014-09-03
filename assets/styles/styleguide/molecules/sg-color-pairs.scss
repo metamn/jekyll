@@ -1,0 +1,13 @@
+@mixin sg-color-pairs {
+  section {
+    article {
+      @for $i from 1 through length($color-pairs) {
+        &:nth-of-type(#{$i}) {
+          figure {
+            @include colors(nth($color-pairs, $i)); 
+          }
+        }
+      }
+    }
+  }
+}

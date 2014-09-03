@@ -6,48 +6,74 @@ category: atoms
 scss: "colors.scss"
 items:
   - name: white
-    value: white
+    value: "hsla(0, 0, 100%, 1)"
     description: background color
   - name: black
     value: "hsla(170, 45%, 5%, 1)"
     description: text color
+pairs:
+  - name: Black on white
+    foreground: black
+    background: white
+    contrast: AAA
+  - name: White on black
+    foreground: white
+    background: black
+    contrast: AAA
 ---
 
 
-{% capture description %}
-  <p>
-    All the colors used by the site.
-  </p>
-{% endcapture %}
-
-
-{% capture example %}
-  <section>
-    <h3>Color swatches</h3>
-    {% for item in page.items %}
-      <article>
-        <h3>{{ item.name }}</h3>
-        <figure>&nbsp;</figure>
-        <aside>
-          <h3>Description</h3>
-          <p>{{ item.name }}</p>
-          <p>{{ item.value }}</p>
-          <p>{{ item.description }}</p>
-        </aside>
-      </article>
-    {% endfor %}
-  </section>
-{% endcapture %}
-
-
-
-{% capture technical %}
-  <p>
-    This is a short technical description
-  </p>
-{% endcapture %}
-
-
-
-
-{% include styleguide/sg-styleguide-entry.html description=description example=example technical=technical %}
+<section id="{% include site/atoms/classname.html title=page.title %}" class="styleguide-entry">
+  <h3>{{ page.title }}</h3>
+  
+  <article class="description">
+    <h3>Description</h3>
+    
+    <p>
+      All the colors used by the site.
+    </p>
+  </article>
+  
+  
+  <article class="example color-swatches">
+    <h3>Example for color swatches</h3>
+    
+    {% include styleguide/molecules/sg-color-swatches.html %}
+  </article>
+  
+  
+  <article class="technical">
+    <h3>Usage</h3>
+    
+    <p>
+      Colors do not exists alone. They are forming color pairs: a foreground color on a background color.
+    </p>
+    
+    <p>
+      Colors pairs have contrast. Better the contrast better the readability and perception. 
+    </p>
+    
+    <p>
+      Web standards suggest high enough color contrast ratios to make websites readable for people with color vision deficiency.  
+    </p>
+  </article>
+  
+  
+  <article class="technical">
+    <h3>Color pairs</h3>
+    
+    <p>
+      This site uses color pairs accessible for everybody. 
+      With a {% include site/atoms/link.html url="http://leaverou.github.io/contrast-ratio/" title="contrast ratio checker" %} we make sure all pairings pass the AAA or AA levels for any text.
+    </p>
+  </article>
+  
+  
+  <article class="example color-pairs">
+    <h3>Example for color pairs</h3>
+    
+    {% include styleguide/molecules/sg-color-pairs.html %}
+  </article>
+  
+  {% include styleguide/molecules/sg-code.html %}
+</section>

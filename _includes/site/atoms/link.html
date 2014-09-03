@@ -1,0 +1,29 @@
+{% if include.id %}
+  {% assign id = include.id | times: 1 %}
+  {% assign link = page.links[id] %}
+  {% assign url = link.url %}
+  {% assign title = link.title %}
+  
+  {% if link.text %}
+    {% assign text = link.text %}
+  {% else %}
+    {% assign text = link.title %}
+  {% endif %}
+{% else %}
+  {% assign url = include.url %}
+  {% assign title = include.title %}
+
+  {% if include.text %}
+    {% assign text = include.text %}
+  {% else %}
+    {% assign text = include.title %}
+  {% endif %}
+{% endif %}
+
+
+{% if include.relative %}
+  <a href="{{ site.url }}{{ url }}" title="{{ title }}">{{ text }}</a>
+{% else %}
+  <a href="{{ url }}" title="{{ title }}">{{ text }}</a>
+{% endif %}
+

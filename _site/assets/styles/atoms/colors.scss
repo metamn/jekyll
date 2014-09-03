@@ -1,5 +1,23 @@
-$white: white;
+$white: hsla(0, 0, 100%, 1);
 $black: hsla(170, 45%, 5%, 1);
 
+$colors: hsla(0, 0, 100%, 1), hsla(170, 45%, 5%, 1);
 
-$colors: white, hsla(170, 45%, 5%, 1);
+
+@mixin colors($scheme: black-on-white) {
+  
+    @if ($scheme == black-on-white) {
+      color: $black;
+      background-color: $white;
+    }
+  
+    @if ($scheme == white-on-black) {
+      color: $white;
+      background-color: $black;
+    }
+  
+}
+
+
+
+$color-pairs: black-on-white, white-on-black;

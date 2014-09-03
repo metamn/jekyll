@@ -17,5 +17,15 @@
   }
 
   &.example { 
+    @include hide-title;
+  }
+  
+  &.color-swatches {
+    @include sg-color-swatches;
+  }
+  
+  &.color-pairs {
+    @include sg-color-swatches;
+    @include sg-color-pairs;
   }
 }
