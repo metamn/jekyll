@@ -11,6 +11,8 @@
   }
 
   &.code {
+    max-width: 40em;
+    
     nav ul li {
       @include sg-highlight;
     }
@@ -18,6 +20,26 @@
 
   &.example { 
     @include hide-title;
+    
+    border: 1px solid;
+    padding: $lem;
+    margin-top: $lem;
+  }
+  
+  &.text, .text {
+    max-width: 40em;
+    
+    p {  
+      + p {
+        margin-top: $lem;
+      }
+    }
+    
+    div {
+      + div {
+        margin-top: $lem;
+      }
+    }
   }
   
   &.color-swatches {

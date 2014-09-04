@@ -1,12 +1,12 @@
 {% for font in page.fonts %}
-  <aside id="{% include site/atoms/classname.html title=font.name %}">
+  <aside id="{% include site/atoms/classname.html title=font.name %}" class="text">
     <h3>{{ font.name }}</h3>
     
-    <div class="description">
+    <div>
       {{ font.description }}
     </div>
     
-    <div class="specimen">
+    <div>
       <h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
       
       <p>
@@ -18,46 +18,48 @@
       </p> 
     </div>
     
-    <div class="character-set numeric">
-      {% for i in (48..57) %}
-        <span>&#{{ i }}</span>
-      {% endfor %}
-    </div>
-    
-    <div class="character-set normal">
-      {% for i in (97..122) %}
-        <span>&#{{ i }}</span>
-      {% endfor %}
-    </div>
-    
-    <div class="character-set caps">
-      {% for i in (65..90) %}
-        <span>&#{{ i }}</span>
-      {% endfor %}
-    </div>
-    
-    <div class="character-set common">
-      {% for i in (33..47) %}
-        <span>&#{{ i }}</span>
-      {% endfor %}
-      
-      {% for i in (58..64) %}
-        <span>&#{{ i }}</span>
-      {% endfor %}
-      
-      {% for i in (91..96) %}
-        <span>&#{{ i }}</span>
-      {% endfor %}
-      
-      {% for i in (123..126) %}
-        <span>&#{{ i }}</span>
-      {% endfor %}
-    </div>
-    
-    <div class="character-set uncommon">
-      {% for i in (161..255) %}
-        <span>&#{{ i }}</span>
-      {% endfor %}
+    <div>
+      <p class="numeric">
+        {% for i in (48..57) %}
+          <span>&#{{ i }}</span>
+        {% endfor %}
+        </p>
+
+      <p class="normal">
+        {% for i in (97..122) %}
+          <span>&#{{ i }}</span>
+        {% endfor %}
+      </p>
+
+      <p class="caps">
+        {% for i in (65..90) %}
+          <span>&#{{ i }}</span>
+        {% endfor %}
+      </p>
+
+      <p class="common">
+        {% for i in (33..47) %}
+          <span>&#{{ i }}</span>
+        {% endfor %}
+
+        {% for i in (58..64) %}
+          <span>&#{{ i }}</span>
+        {% endfor %}
+
+        {% for i in (91..96) %}
+          <span>&#{{ i }}</span>
+        {% endfor %}
+
+        {% for i in (123..126) %}
+          <span>&#{{ i }}</span>
+        {% endfor %}
+      </p>
+
+      <p class="uncommon">
+        {% for i in (161..255) %}
+          <span>&#{{ i }}</span>
+        {% endfor %}
+      </p>
     </div>
   </aside>
 {% endfor %}

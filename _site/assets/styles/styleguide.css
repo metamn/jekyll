@@ -48,6 +48,7 @@ html.styleguide body main .styleguide-entry article { padding-top: 1.25em; }
 html.styleguide body main .styleguide-entry article > h3 { display: block; }
 html.styleguide body main .styleguide-entry article h3 { font-family: "Source Sans Pro", sans-serif; font-weight: 600; font-size: 100%; }
 html.styleguide body main .styleguide-entry article.description > h3 { display: none; }
+html.styleguide body main .styleguide-entry article.code { max-width: 40em; }
 html.styleguide body main .styleguide-entry article.code nav ul li .highlight table td { padding: 5px; }
 html.styleguide body main .styleguide-entry article.code nav ul li .highlight table pre { margin: 0; }
 html.styleguide body main .styleguide-entry article.code nav ul li .highlight .gh { color: #999999; }
@@ -112,7 +113,11 @@ html.styleguide body main .styleguide-entry article.code nav ul li .highlight .k
 html.styleguide body main .styleguide-entry article.code nav ul li .highlight .kp { color: #f92672; }
 html.styleguide body main .styleguide-entry article.code nav ul li .highlight .o { color: #f92672; }
 html.styleguide body main .styleguide-entry article.code nav ul li .highlight { background: black; color: white; padding: 1.25em; font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: smaller; }
+html.styleguide body main .styleguide-entry article.example { border: 1px solid; padding: 1.25em; margin-top: 1.25em; }
 html.styleguide body main .styleguide-entry article.example > h3 { display: none; }
+html.styleguide body main .styleguide-entry article.text, html.styleguide body main .styleguide-entry article .text { max-width: 40em; }
+html.styleguide body main .styleguide-entry article.text p + p, html.styleguide body main .styleguide-entry article .text p + p { margin-top: 1.25em; }
+html.styleguide body main .styleguide-entry article.text div + div, html.styleguide body main .styleguide-entry article .text div + div { margin-top: 1.25em; }
 html.styleguide body main .styleguide-entry article.color-swatches section { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 html.styleguide body main .styleguide-entry article.color-swatches section article { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: auto; -moz-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; -webkit-align-self: auto; -moz-align-self: auto; -ms-flex-item-align: auto; align-self: auto; padding-right: 1.25em; }
 html.styleguide body main .styleguide-entry article.color-swatches section article figure { width: 6.25em; min-width: 6.25em; min-height: 6.25em; }
