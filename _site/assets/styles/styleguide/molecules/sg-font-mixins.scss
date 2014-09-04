@@ -1,21 +1,16 @@
 @mixin sg-font-mixins {
   section {
-    @include flexbox($wrap: wrap);
+    @include flexbox($wrap: wrap, $justify-content: space-between);
 
     article {
-      @include hide-title;
       @include flex-item;
-      @include flexbox;
       padding-right: $lem;
-
+      
       figure {
-        @include flex-item;
-        min-width: $lem * 5; // simple 'width' doesn't works on mobiles
-        border: 1px solid;
-        padding: $lem;
+        min-height: $lem * 5;
         
         // center figcaption
-        @include flexbox($justify-content: center, $align-items: center);
+        @include flexbox($align-items: center);
         
         figcaption {
           @include flex-item;
@@ -28,20 +23,6 @@
             figcaption {
               @include font(nth($font-mixins, $i));
             }
-          }
-        }
-      }
-
-      aside {
-        @include flex-item;
-        @include flexbox($direction: column);
-
-        p {
-          @include flex-item;
-          padding: 0 $lem $lem;
-
-          &:last-of-type {
-            padding-bottom: 0;
           }
         }
       }

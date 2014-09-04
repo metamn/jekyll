@@ -1,16 +1,15 @@
 @mixin sg-fonts-and-colors {
   section {
-    @include flexbox($wrap: wrap);
+    @include flexbox($wrap: wrap, $justify-content: space-between);
 
     article {
-      @include hide-title;
       @include flex-item;
-      @include flexbox;
       padding-right: $lem;
-
+      
       figure {
-        @include flex-item;
-        min-width: $lem * 5; // simple 'width' doesn't works on mobiles
+        min-height: $lem * 5;
+        min-width: $lem * 10;
+        
         border: 1px solid;
         padding: $lem;
         
@@ -22,6 +21,7 @@
         }
       }
 
+      
       @for $i from 1 through length($font-mixins) {
         @for $j from 1 through length($color-pairs) {
           $k: ($i - 1) * 2 + $j;
@@ -33,20 +33,6 @@
               
               @include colors(nth($color-pairs, $j));
             }
-          }
-        }
-      }
-
-      aside {
-        @include flex-item;
-        @include flexbox($direction: column);
-
-        p {
-          @include flex-item;
-          padding: 0 $lem $lem;
-
-          &:last-of-type {
-            padding-bottom: 0;
           }
         }
       }

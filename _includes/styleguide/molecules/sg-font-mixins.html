@@ -5,6 +5,7 @@
     {% for mixin in font.mixins %}
       <article>
         <h3>{{ mixin.name }}</h3>
+        
         <figure>
           {% if mixin.name == "Body" %}
             <figcaption>
@@ -12,20 +13,22 @@
             </figcaption>
           {% else %}
             <figcaption>
-              {{ mixin.name }}
+              This is a title
             </figcaption>
           {% endif %}
         </figure>
+        
         <aside>
           <h3>Description</h3>
-          <p>${% include site/atoms/classname.html title=mixin.name %}</p>
-          {% capture properties %}
-            {% for property in mixin.properties %}
-              {{ property.name }}: {{ property.value }},
-            {% endfor %}
-          {% endcapture %}
-          {% assign properties = properties | split: ',' %}
-          <p>set in {{ properties | join: ', ' }}</p>
+          <ul>
+            {% capture properties %}
+              {% for property in mixin.properties %}
+                {{ property.name }}: {{ property.value }},
+              {% endfor %}
+            {% endcapture %}
+            {% assign properties = properties | split: ',' %}
+            {{ properties | join: '</li>' | prepend: '<li>' }}
+          </ul>
         </aside>
       </article>
     {% endfor %}

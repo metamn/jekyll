@@ -52,6 +52,7 @@
   }
   
   &.font-families {
+    @include hide-title;
     @include sg-font-families;
   }
   
