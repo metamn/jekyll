@@ -3,13 +3,16 @@
   {% for item in page.pairs %}
     <article>
       <h3>{{ item.name }}</h3>
+      
       <figure>
         <figcaption>{{ item.foreground }}</figcaption>
       </figure>
+      
       <aside>
         <h3>Description</h3>
-        <p>${% include site/atoms/classname.html title=item.name %}</p>
-        <p>Contrast level: {{ item.contrast }}</p>
+        <ul>
+          <li>Contrast: {{ item.contrast }}</li>
+        </ul>
       </aside>
     </article>
   {% endfor %}

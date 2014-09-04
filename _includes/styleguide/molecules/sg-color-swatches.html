@@ -6,9 +6,10 @@
       <figure>&nbsp;</figure>
       <aside>
         <h3>Description</h3>
-        <p>${{ item.name }}</p>
-        <p>{{ item.value }}</p>
-        <p>{{ item.description }}</p>
+        <ul>
+          <li>{{ item.description }}</li>
+          <li>{{ item.value }}</li>
+        </ul>
       </aside>
     </article>
   {% endfor %}
