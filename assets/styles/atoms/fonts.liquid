@@ -4,10 +4,6 @@
 // {{ current.comments[0] }}
 @import url(http://fonts.googleapis.com/css?family={{ fonts }});
 
-{% capture fontfamilies %}{% for font in current.fonts %}{{ font.name }},{% endfor %}{% endcapture %}{% assign fontfamilies = fontfamilies | split: ',' %}
-// {{ current.comments[1] }}
-$font-families: {{ fontfamilies | join: ', ' }};
-
 // {{ current.comments[2] }}
 @mixin font($type: body) { {% for font in current.fonts %}{% for mixin in font.mixins %}
   @if ($type == {% include site/atoms/classname.html title=mixin.name %}) {
@@ -17,6 +13,9 @@ $font-families: {{ fontfamilies | join: ', ' }};
   }{% endfor %}{% endfor %}
 }
 
+{% capture fontfamilies %}{% for font in current.fonts %}{{ font.name }},{% endfor %}{% endcapture %}{% assign fontfamilies = fontfamilies | split: ',' %}
+// {{ current.comments[1] }}
+$font-families: {{ fontfamilies | join: ', ' }};
 
 {% capture fontmixins %}{% for font in current.fonts %}{% for mixin in font.mixins %}{% include site/atoms/classname.html title=mixin.name %},{% endfor %}{% endfor %}{% endcapture %}{% assign fontmixins = fontmixins | split: ',' %}
 // {{ current.comments[3] }}

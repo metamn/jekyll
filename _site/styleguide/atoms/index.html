@@ -541,10 +541,6 @@
 <span class="nv">$black</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">170</span><span class="o">,</span> <span class="m">45%</span><span class="o">,</span> <span class="m">5%</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span>
 
 
-<span class="c1">// All color codes collected in a list
-</span><span class="nv">$colors</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">100%</span><span class="o">,</span> <span class="m">1</span><span class="p">)</span><span class="o">,</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">170</span><span class="o">,</span> <span class="m">45%</span><span class="o">,</span> <span class="m">5%</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span>
-
-
 <span class="c1">// All color pairs
 </span><span class="k">@mixin</span> <span class="nf">colors</span><span class="p">(</span><span class="nv">$scheme</span><span class="o">:</span> <span class="n">black-on-white</span><span class="p">)</span> <span class="p">{</span>
    <span class="k">@if</span> <span class="p">(</span><span class="nv">$scheme</span> <span class="o">==</span> <span class="n">black-on-white</span><span class="p">)</span> <span class="p">{</span>
@@ -555,6 +551,10 @@
       <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$black</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">}</span>
+
+
+<span class="c1">// All color codes collected in a list
+</span><span class="nv">$colors</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">100%</span><span class="o">,</span> <span class="m">1</span><span class="p">)</span><span class="o">,</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">170</span><span class="o">,</span> <span class="m">45%</span><span class="o">,</span> <span class="m">5%</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span>
 
 
 <span class="c1">// All color pairs collected in a list
@@ -1792,10 +1792,6 @@
       <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Served from Google Fonts
 </span><span class="k">@import</span> <span class="sx">url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Montserrat:400,700|)</span><span class="p">;</span>
 
-
-<span class="c1">// A list of all font families
-</span><span class="nv">$font-families</span><span class="p">:</span> <span class="n">Source</span> <span class="n">Sans</span> <span class="n">Pro</span><span class="o">,</span> <span class="n">Montserrat</span><span class="p">;</span>
-
 <span class="c1">// Special font mixins
 </span><span class="k">@mixin</span> <span class="nf">font</span><span class="p">(</span><span class="nv">$type</span><span class="o">:</span> <span class="n">body</span><span class="p">)</span> <span class="p">{</span> 
   <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">body</span><span class="p">)</span> <span class="p">{</span>
@@ -1823,6 +1819,9 @@
   <span class="p">}</span>
 <span class="p">}</span>
 
+
+<span class="c1">// A list of all font families
+</span><span class="nv">$font-families</span><span class="p">:</span> <span class="n">Source</span> <span class="n">Sans</span> <span class="n">Pro</span><span class="o">,</span> <span class="n">Montserrat</span><span class="p">;</span>
 
 
 <span class="c1">// A list of all font mixins

@@ -1,15 +1,11 @@
 ---
 ---
 {% for page in site.pages %}{% if page.title == "Colors" %}{% assign current = page %}{% endif %}{% endfor %}
-// {{ current.colors-description }}
+// {{ current.comments[0] }}
 {% for color in current.colors %}${{ color.name }}: {{ color.value }};
 {% endfor %}{% capture colors %}{% for color in current.colors %}{{ color.value }},{% endfor %}{% endcapture %}{% capture colors %}{% include styleguide/atoms/sg-clean-spaces.html text=colors %}{% endcapture %}{% assign colors = colors | split: ',' %}
 
-// {{ current.color-list-description }}
-$colors: {{ colors | join: ', ' }};
-
-
-// {{ current.color-pairs-description }}
+// {{ current.comments[2] }}
 @mixin colors($scheme: black-on-white) {
   {% for pair in current.pairs %} @if ($scheme == {% include site/atoms/classname.html title=pair.name %}) {
       color: ${{ pair.foreground }};
@@ -17,6 +13,10 @@ $colors: {{ colors | join: ', ' }};
   }{% endfor %}
 }
 
+
+// {{ current.comments[1] }}
+$colors: {{ colors | join: ', ' }};
+
 {% capture pairs %}{% for pair in current.pairs %}{% include site/atoms/classname.html title=pair.name %},{% endfor %}{% endcapture %}{% assign pairs = pairs | split: ',' %}
-// {{ current.color-pairs-list-description }}
+// {{ current.comments[3] }}
 $color-pairs: {{ pairs | join: ', ' }};

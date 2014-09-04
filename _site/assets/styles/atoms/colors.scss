@@ -4,10 +4,6 @@ $white: hsla(0, 0, 100%, 1);
 $black: hsla(170, 45%, 5%, 1);
 
 
-// All color codes collected in a list
-$colors: hsla(0, 0, 100%, 1), hsla(170, 45%, 5%, 1);
-
-
 // All color pairs
 @mixin colors($scheme: black-on-white) {
    @if ($scheme == black-on-white) {
@@ -18,6 +14,10 @@ $colors: hsla(0, 0, 100%, 1), hsla(170, 45%, 5%, 1);
       background-color: $black;
   }
 }
+
+
+// All color codes collected in a list
+$colors: hsla(0, 0, 100%, 1), hsla(170, 45%, 5%, 1);
 
 
 // All color pairs collected in a list
